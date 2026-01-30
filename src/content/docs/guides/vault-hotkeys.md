@@ -26,5 +26,10 @@ Here's a guide for some important hotkeys set especially for this theme:
 | Open Terminal | `CTRL + SHIFT + D` |
 | Open Astro config file | `CTRL + SHIFT + ,` |
 | Commit and sync with [Git](/plugins/git/) | `CTRL + SHIFT + S` |
+| Open [Omnisearch](/plugins/omnisearch/) | `CTRL + SHIFT + O` |
+| Toggle minimal focus mode | `CTRL + ALT + F` |
+| Toggle ribbon | `CTRL + ALT + A` |
+| Reload app | `CTRL + SHIFT + R` |
+| Toggle light/dark theme | `CTRL + SHIFT + M` |
 
 If you're on Mac, `CTRL` = `CMD`.
