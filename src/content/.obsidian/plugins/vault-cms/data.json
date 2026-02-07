@@ -80,15 +80,8 @@
     "useFilenameAsSlug": true,
     "enableMDXSupport": false
   },
-  "commanderConfig": {
-    "pageHeaderCommands": []
-  },
   "propertyOverFileName": {
     "propertyKey": "title"
-  },
-  "imageInserter": {
-    "valueFormat": "[[attachments/{image-url}]]",
-    "insertFormat": "[[attachments/{image-url}]]"
   },
   "imageManager": {
     "enableRenameOnPaste": true,
