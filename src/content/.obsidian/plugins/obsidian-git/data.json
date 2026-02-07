@@ -1,6 +1,6 @@
 {
-  "commitMessage": "Blog update {{date}}: {{numFiles}} file(s) changed.",
-  "autoCommitMessage": "Blog update {{date}}: {{numFiles}} file(s) changed.",
+  "commitMessage": "Vault CMS Docs update {{date}}: {{numFiles}} file(s) changed.",
+  "autoCommitMessage": "Vault CMS Docs update {{date}}: {{numFiles}} file(s) changed.",
   "commitMessageScript": "",
   "commitDateFormat": "M/D/YYYY h:ma",
   "autoSaveInterval": 0,

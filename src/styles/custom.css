@@ -8,15 +8,24 @@
     --sl-font: "DM Sans", system-ui, sans-serif;
     --sl-font-mono: "Consolas", "Monaco", "Menlo", "Andale Mono", "Ubuntu Mono", monospace;
 
-    /* Brand colors */
+    /* Brand colors (shared) */
     --sl-color-accent-low: hsl(310, 80%, 20%);
     --sl-color-accent: hsl(310, 80%, 65%);
     --sl-color-accent-high: hsl(310, 80%, 85%);
+}
 
-    /* Background colors */
+/* Dark theme colors */
+:root[data-theme='dark'] {
     --sl-color-bg: #0f0d11;
     --sl-color-bg-sidebar: #161519;
     --sl-color-bg-nav: #161519;
+}
+
+/* Light theme colors */
+:root[data-theme='light'] {
+    --sl-color-bg: #f7f6f9;
+    --sl-color-bg-sidebar: #efedf2;
+    --sl-color-bg-nav: #efedf2;
 }
 
 body {
