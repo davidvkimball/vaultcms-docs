@@ -17,6 +17,7 @@
   "autoRevealButton": false,
   "collapseAllButton": false,
   "readingModeButton": false,
+  "bookmarkedButton": false,
   "searchSettingsButton": false,
   "tabListIcon": "show",
   "newTabIcon": "show",
@@ -163,7 +164,7 @@
     {
       "id": "native-collapseAll",
       "name": "Collapse all",
-      "ariaLabel": "Expand all",
+      "ariaLabel": "Collapse all",
       "type": "native",
       "hidden": false
     },
@@ -176,5 +177,21 @@
     }
   ],
   "nativeExplorerButtonColors": {},
-  "nativeExplorerButtonIcons": {}
+  "nativeExplorerButtonIcons": {},
+  "propertyIconItems": [
+    {
+      "id": "title",
+      "icon": "lucide-type"
+    },
+    {
+      "id": "description",
+      "icon": "lucide-text-initial"
+    },
+    {
+      "id": "cssclasses",
+      "icon": "lucide-palette"
+    }
+  ],
+  "minimalPropertyIcons": false,
+  "showPropertyMenuActions": true
 }

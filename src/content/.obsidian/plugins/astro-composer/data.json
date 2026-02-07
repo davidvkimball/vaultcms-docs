@@ -1,54 +1,58 @@
 {
-  "defaultTemplate": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n",
+  "defaultTemplate": "---\ntitle: \"{{title}}\"\ndate: {{date}}\ntags: []\n---\n",
   "autoInsertProperties": true,
   "dateFormat": "YYYY-MM-DD",
   "enableCopyHeadingLink": true,
   "copyHeadingLinkFormat": "astro",
   "addTrailingSlashToLinks": true,
   "enableOpenTerminalCommand": true,
-  "terminalProjectRootPath": "../../",
+  "terminalProjectRootPath": "../..",
   "terminalApplicationName": "",
   "enableTerminalDebugLogging": false,
-  "enableTerminalRibbonIcon": true,
+  "enableTerminalRibbonIcon": false,
   "enableOpenConfigFileCommand": true,
   "configFilePath": "../../astro.config.mjs",
-  "enableConfigRibbonIcon": true,
+  "enableConfigRibbonIcon": false,
   "contentTypes": [
     {
-      "id": "content-type-1768697426227-d6b7tj26w",
+      "id": "content-1770423913278",
       "name": "Guides",
       "folder": "docs/guides",
       "linkBasePath": "/guides/",
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n",
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n--\n",
       "enabled": true,
       "creationMode": "file",
-      "indexFileName": "index",
+      "indexFileName": "",
       "ignoreSubfolders": false,
-      "enableUnderscorePrefix": false
+      "enableUnderscorePrefix": false,
+      "useMdxExtension": false
     },
     {
-      "id": "content-type-1768697430049-8m3szy5y2",
+      "id": "content-1770423963104",
       "name": "Plugins",
       "folder": "docs/plugins",
       "linkBasePath": "/plugins/",
       "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n",
       "enabled": true,
       "creationMode": "file",
-      "indexFileName": "index",
+      "indexFileName": "",
       "ignoreSubfolders": false,
-      "enableUnderscorePrefix": false
+      "enableUnderscorePrefix": false,
+      "useMdxExtension": false
     }
   ],
-  "migrationCompleted": true,
+  "migrationCompleted": false,
   "helpButtonReplacement": {
     "enabled": true,
     "commandId": "astro-composer:edit-astro-config",
     "iconId": "wrench"
   },
-  "showMdxFilesInExplorer": true,
-  "processBackgroundFileChanges": true,
-  "linkBasePath": "/posts/",
-  "enableAutoRename": true,
-  "enableAutoInsertFrontmatter": true,
-  "draftStyle": "filename"
+  "showMdxFilesInExplorer": false,
+  "processBackgroundFileChanges": false,
+  "syncDraftDate": false,
+  "draftProperty": "",
+  "draftLogic": "true-is-draft",
+  "publishDateField": "",
+  "updateModifiedDate": false,
+  "modifiedDateField": ""
 }

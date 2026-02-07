@@ -2,8 +2,11 @@
 title: Introduction
 description: Overview, philosophy, and default settings for Vault CMS.
 ---
+## What is Vault CMS? 
 
-All plugins, key bindings, and the theme can be customized to your liking, but this is what's on by default.
+Vault CMS lets you use [Obsidian](https://obsidian.md) as a content management system for your [Astro](https://astro.build) website. 
+
+It comes with preconfigured settings, plugins, and a wizard to step you through all of it.
 
 ## Philosophy 
 
@@ -12,6 +15,8 @@ All plugins, key bindings, and the theme can be customized to your liking, but t
 3. **Visual parity between backend and frontend**: What you see in Obsidian should closely match what your readers see.
 
 ## Default Settings
+
+It's an opinionated Obsidian vault, but allows for lots of customizability. Here's what's on by default.
 
 1. Markdown links are used in favor of wikilinks.
 2. Some core plugins are disabled (details below).
@@ -40,7 +45,6 @@ All plugins, key bindings, and the theme can be customized to your liking, but t
 - [Explorer Focus](/plugins/explorer-focus/)
 - [Git](/plugins/git/)
 - [Home Base](/plugins/home-base/)
-- [Iconic](/plugins/iconic/)
 - [Image Manager](/plugins/image-manager/)
 - [Omnisearch](/plugins/omnisearch/)
 - [Oxygen Settings](/plugins/oxygen-settings/)

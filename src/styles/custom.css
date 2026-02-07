@@ -1,18 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 /* 
    FONT CUSTOMIZATION
 */
 
 :root {
-    --sl-font: "Consolas", "Monaco", "Menlo", "Andale Mono", "Ubuntu Mono", monospace;
+    --sl-font: "DM Sans", system-ui, sans-serif;
     --sl-font-mono: "Consolas", "Monaco", "Menlo", "Andale Mono", "Ubuntu Mono", monospace;
+
+    /* Brand colors */
+    --sl-color-accent-low: hsl(310, 80%, 20%);
+    --sl-color-accent: hsl(310, 80%, 65%);
+    --sl-color-accent-high: hsl(310, 80%, 85%);
+
+    /* Background colors */
+    --sl-color-bg: #0f0d11;
+    --sl-color-bg-sidebar: #161519;
+    --sl-color-bg-nav: #161519;
 }
 
-* {
+body {
     font-family: var(--sl-font) !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+code,
+pre,
+kbd,
+samp {
+    font-family: var(--sl-font-mono) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--sl-font-mono) !important;
     font-weight: 600;
+}
+
+h1 {
+    font-size: 1.75rem !important;
+}
+
+h2 {
+    font-size: 1.5rem !important;
+}
+
+h3 {
+    font-size: 1.25rem !important;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 1.1rem !important;
 }
 
 /* 
@@ -37,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 .header .title-wrapper a::before {
     content: "";
     display: inline-block;
-    width: 180px; 
+    width: 180px;
     height: 40px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -54,48 +97,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* 
-   HOME PAGE HERO FIX
-*/
-
-[data-template="splash"] .hero {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    grid-template-columns: 1fr !important;
-}
-
-[data-template="splash"] .hero > div {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    width: 100% !important;
-    max-width: none !important;
-}
-
-[data-template="splash"] .hero .sl-flex {
-    justify-content: center !important;
-    width: 100% !important;
-}
-
-[data-template="splash"] .main-frame .sl-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* 
    CONTENT STYLES
 */
 
-body:not([data-template="splash"]) .main-frame .sl-container {
+.main-frame .sl-container {
     display: block;
 }
 
-body:not([data-template="splash"]) .content-panel {
+.content-panel {
     text-align: left;
 }
 
-body:not([data-template="splash"]) h1 {
+h1 {
     text-align: left;
 }

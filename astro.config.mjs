@@ -4,9 +4,25 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	redirects: {
+		'/': '/guides/introduction/',
+	},
 	integrations: [
 		starlight({
 			title: 'Vault CMS',
+			head: [
+				{
+					tag: 'script',
+					content: `
+						window.addEventListener('DOMContentLoaded', () => {
+							const logoLink = document.querySelector('.header .title-wrapper a');
+							if (logoLink) {
+								logoLink.href = 'https://vaultcms.org/';
+							}
+						});
+					`,
+				},
+			],
 			/* 
 			   Logo is handled via custom.css to prevent the "flashing" 
 			   caused by Astro's image processing during navigation.
@@ -39,7 +55,6 @@ export default defineConfig({
 						{ label: 'Folder Notes', slug: 'plugins/folder-notes' },
 						{ label: 'Git', slug: 'plugins/git' },
 						{ label: 'Home Base', slug: 'plugins/home-base' },
-						{ label: 'Iconic', slug: 'plugins/iconic' },
 						{ label: 'Image Manager', slug: 'plugins/image-manager' },
 						{ label: 'Omnisearch', slug: 'plugins/omnisearch' },
 						{ label: 'Oxygen Settings', slug: 'plugins/oxygen-settings' },
