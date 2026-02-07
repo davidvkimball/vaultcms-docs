@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/plugins/ui-tweaker.md",
+                "file": "docs/guides/installation.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "ui-tweaker"
+              "title": "installation"
             }
           }
         ],
@@ -175,6 +175,7 @@
   "active": "d3118fd7ca4f3e9e",
   "lastOpenFiles": [
     "docs/guides/introduction.md",
+    "docs/plugins/ui-tweaker.md",
     "docs/plugins/iconic.md",
     "_bases/Home.base",
     "docs/guides/installation.md",
@@ -187,7 +188,6 @@
     "docs/plugins/settings-search.md",
     "docs/plugins/tag-wrangler.md",
     "docs/index.mdx",
-    "docs/plugins/ui-tweaker.md",
     "docs/plugins/seo.md",
     "docs/plugins/git.md",
     "docs/plugins/folder-notes.md",

@@ -54,12 +54,12 @@ If you prefer to install manually without the CLI:
 1. Download the [latest release ZIP](https://github.com/davidvkimball/vault-cms/archive/refs/heads/master.zip).
 2. Extract the contents.
 3. Copy the `_bases` and `.obsidian` folders into your Astro project (e.g., `src/content`).
-4. Open Obsidian and select **Open folder as vault**.
-5. Select the folder where you placed the `.obsidian` directory.
 
 ## Post-Installation
 
-Once installed and opened in Obsidian:
-1. The **Vault CMS Plugin** will automatically detect your Astro project.
-2. A setup wizard will guide you through configuring your content types and properties.
-3. You're ready to start writing!
+Once installed, open and initialize with Obsidian:
+1. Open Obsidian and select **Open folder as vault**.
+2. Select the folder where you placed the `.obsidian` directory.
+3. The **Vault CMS Plugin** will automatically detect your Astro project.
+4. A setup wizard will guide you through configuring your content types and properties.
+5. You're ready to start writing!
