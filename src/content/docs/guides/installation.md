@@ -3,7 +3,14 @@ title: Installation
 description: How to install Vault CMS using the CLI or manual methods.
 ---
 
-Vault CMS is designed to be installed directly into your Astro project's content directory.
+Vault CMS is designed to be installed directly into your Astro project's content directory. But it can work at the project's root level, too. 
+
+## Prerequisites
+
+- [Node.js 22.x](https://nodejs.org/en)
+- [Astro project](https://astro.build/) (supports [most themes](astro.build/themes))
+- [Obsidian](https://obsidian.md)
+- [Git](https://git-scm.com/)
 
 ## CLI Installation (Recommended)
 
