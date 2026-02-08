@@ -41,11 +41,11 @@
       "useMdxExtension": false
     }
   ],
-  "migrationCompleted": false,
+  "migrationCompleted": true,
   "helpButtonReplacement": {
     "enabled": true,
     "commandId": "astro-composer:edit-astro-config",
-    "iconId": "wrench"
+    "iconId": "rocket"
   },
   "showMdxFilesInExplorer": false,
   "processBackgroundFileChanges": false,
