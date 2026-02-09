@@ -98,11 +98,11 @@ h6 {
 
 /* Theme-specific logo swapping using absolute paths to public folder */
 :root[data-theme='light'] .header .title-wrapper a::before {
-    background-image: url('/assets/vault-cms-logo-on-light.png');
+    background-image: url('/assets/vault-cms-docs-logo-on-light.png');
 }
 
 :root[data-theme='dark'] .header .title-wrapper a::before {
-    background-image: url('/assets/vault-cms-logo-on-dark.png');
+    background-image: url('/assets/vault-cms-docs-logo-on-dark.png');
 }
 
 /* 
