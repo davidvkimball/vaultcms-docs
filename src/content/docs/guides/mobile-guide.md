@@ -19,11 +19,11 @@ This method is recommended rather than merely disabling the plugin, since if you
 
 ## Limitations
 
-Aspects of the [UI Tweaker](/guides/theme-and-ui/) plugin and some [Image Manager](/plugins/image-manager/) features are disabled on mobile. 
+Aspects of the [UI Tweaker](/plugins/ui-tweaker/) plugin and some [Image Manager](/plugins/image-manager/) features are disabled on mobile. 
 
 ## Customization 
 
-To tweak the mobile-specific experience on the mobile version of Obsidian, you can use the [UI Tweaker](/guides/theme-and-ui/) plugin's settings and also visit **Toolbar** and **Appearance** in settings.
+To tweak the mobile-specific experience on the mobile version of Obsidian, you can use the [UI Tweaker](/plugins/ui-tweaker/) plugin's settings and also visit **Toolbar** and **Appearance** in settings.
 
 ### Toolbar
 

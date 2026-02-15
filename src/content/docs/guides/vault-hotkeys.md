@@ -17,7 +17,7 @@ Here's a guide for some important hotkeys set especially for this theme:
 | Toggle property folding | `CTRL + ALT + P` |
 | Toggle reading view | `CTRL + E` |
 | Toggle [Editing Toolbar](/plugins/editing-toolbar/) | `CTRL + SHIFT + E` |
-| Toggle [Zen mode](/guides/theme-and-ui/) | `CTRL + SHIFT + Z` |
+| Toggle [Zen mode](/plugins/zen-mode/) | `CTRL + SHIFT + Z` |
 | Insert remote image | `CTRL + '` |
 | Insert remote image into property | `CTRL + SHIFT + '` |
 | Insert callout | `CTRL + SHIFT + C` |

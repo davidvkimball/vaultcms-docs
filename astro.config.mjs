@@ -1,9 +1,15 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import rehypeExternalLinks from 'rehype-external-links';
 
 // https://astro.build/config
 export default defineConfig({
+	markdown: {
+		rehypePlugins: [
+			[rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }],
+		],
+	},
 	integrations: [
 		starlight({
 			title: 'Vault CMS',
@@ -46,6 +52,7 @@ export default defineConfig({
 						{ label: 'Astro Composer', slug: 'plugins/astro-composer' },
 						{ label: 'Bases CMS', slug: 'plugins/bases-cms' },
 						{ label: 'BRAT', slug: 'plugins/brat' },
+						{ label: 'Data Files Editor', slug: 'plugins/data-files-editor' },
 						{ label: 'Disable Tabs', slug: 'plugins/disable-tabs' },
 						{ label: 'Editing Toolbar', slug: 'plugins/editing-toolbar' },
 						{ label: 'Explorer Focus', slug: 'plugins/explorer-focus' },
@@ -60,7 +67,7 @@ export default defineConfig({
 						{ label: 'Settings Search', slug: 'plugins/settings-search' },
 						{ label: 'Tag Wrangler', slug: 'plugins/tag-wrangler' },
 						{ label: 'UI Tweaker', slug: 'plugins/ui-tweaker' },
-						{ label: 'Vault CMS', slug: 'plugins/vault-cms' },
+						{ label: 'Vault CMS (Plugin)', slug: 'plugins/vault-cms' },
 						{ label: 'Zen Mode', slug: 'plugins/zen-mode' },
 					],
 				},
