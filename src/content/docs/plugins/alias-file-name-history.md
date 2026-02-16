@@ -5,9 +5,9 @@ description: Keep track of old post or page URLs.
 
 [Alias File Name History](https://github.com/davidvkimball/obsidian-alias-filename-history) helps you keep track of old post or page URLs if you rename your files.
 
-### Commands
+### Features
 
-- **Rename note**: Rename a note with `CTRL + R`. The filename (or parent folder) is updated in kebab-case automatically, and the old filename is stored as an alias.
+- **Automatic alias tracking** — when a file or parent folder is renamed (e.g. via [Astro Composer](/plugins/astro-composer/)'s `CTRL + R`), the old filename is stored as an alias automatically.
 
 ### Settings
 
