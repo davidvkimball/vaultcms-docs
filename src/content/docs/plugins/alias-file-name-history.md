@@ -9,7 +9,7 @@ description: Keep track of old post or page URLs.
 
 - **Automatic alias tracking** — when a file or parent folder is renamed (e.g., via [Astro Composer](/plugins/astro-composer/)'s `CTRL + R`), the old filename is stored as an alias automatically after a configurable timeout.
 - **Parent folder tracking** — optionally stores the old parent folder name as an alias when renamed (off by default).
-- **Ignore patterns** — skip adding aliases for file names or folder names matching regex patterns (e.g., `^_` for underscore prefixes, `^Untitled$`).
+- **Ignore patterns** — skip adding aliases for file names or folder names matching regex patterns (e.g., `^_` for underscore prefixes, `^Untitled$`). Supports wildcard folder patterns (`/**`, `/*`).
 - **Case sensitivity** — toggle to treat case differences (e.g., "Note" vs. "note") as unique aliases.
 - **Folder filtering** — restrict tracking to specific folders or exclude others.
 - **File extension support** — tracks `.md` files by default, with support for custom extensions (e.g., `.mdx`).
@@ -19,7 +19,7 @@ description: Keep track of old post or page URLs.
 
 | Setting | Default |
 | --- | --- |
-| Ignore regex patterns | `^_,^Untitled$` |
+| Ignore regex patterns | `^_`, `^Untitled$`, `^Untitled \d+$` |
 | Timeout seconds | 5 |
 | Case sensitive uniqueness | Off |
 | Auto-create properties | On |

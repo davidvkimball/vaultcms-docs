@@ -26,3 +26,10 @@ When focused, only the focused item, its children, and its ancestors are visible
 ### Commands
 
 - **Explorer Focus: Toggle focus**: Toggle focus mode on/off based on the configured focus level.
+
+### Settings
+
+- **Focus level** — choose the default focus mode (current file, parent, grandparent, great grandparent, or custom folder).
+- **Custom folder path** — specify a folder path for custom folder mode.
+- **Show right-click menu** — enable/disable the focus option in the file explorer context menu.
+- **Show file explorer icon** — add a focus toggle icon to the file explorer navigation bar.

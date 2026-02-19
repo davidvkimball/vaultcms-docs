@@ -17,21 +17,18 @@ Once configured, restart Obsidian and start at [Home Base](/plugins/home-base/).
 
 ### Setup Wizard
 
-The wizard walks you through 13 steps:
+The wizard walks you through 10 steps:
 
 1. **Welcome**: Overview of the setup process.
 2. **Project Detection**: Locates your Astro project by identifying config files (`astro.config.mjs`, etc.).
 3. **Content Types**: Scans your project to identify and categorize content folders (posts, pages, docs, etc.).
-4. **Default Content Type**: Select the primary content type for new notes.
-5. **Properties**: Analyzes existing content to map properties (title, date, description, etc.).
-6. **Editing Toolbar Preference**: Toggles the [Editing Toolbar](/plugins/editing-toolbar/) based on your workflow.
-7. **Bases CMS Configuration**: Dynamically creates CMS views for your content types.
-8. **Astro Composer Configuration**: Bridges Obsidian with Astro's content management via [Astro Composer](/plugins/astro-composer/).
-9. **SEO Configuration**: Sets up scanning directories and property mappings for [SEO](/plugins/seo/) audits.
-10. **Optional Plugins**: Enable or disable recommended ecosystem plugins.
-11. **Ignore Files**: Automatically optimizes `.gitignore` and Vite configurations for your project.
-12. **Git Integration**: Securely links your project to GitHub (PAT stored in Obsidian Secrets). Can initialize Git, create a repository, and perform the initial push.
-13. **Finalize**: Review summary and apply the final configuration.
+4. **Properties**: Analyzes existing content to map properties (title, date, description, etc.).
+5. **Plugin Configuration**: Configures [Bases CMS](/plugins/bases-cms/), [Astro Composer](/plugins/astro-composer/), [SEO](/plugins/seo/), default content type, and editing toolbar preferences in one consolidated step.
+6. **Optional Plugins**: Enable or disable recommended ecosystem plugins.
+7. **Ignore Files**: Automatically optimizes `.gitignore` and Vite configurations for your project.
+8. **Git Integration**: Securely links your project to GitHub (PAT stored in Obsidian Secrets). Can initialize Git, create a repository, and perform the initial push.
+9. **Deployment**: Provides deployment instructions tailored to your platform (Netlify, Vercel, Cloudflare, or GitHub Pages).
+10. **Finalize**: Review summary and apply the final configuration.
 
 ### Bases CMS Folder Detection
 

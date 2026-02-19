@@ -14,8 +14,9 @@ description: Managing your content with a grid-based interface.
 - **Property management** — set or remove properties across multiple files with bulk operations.
 - **Inline renaming** — rename content right from the grid view.
 - **Smart deletion** — automatically delete parent folders when deleting files with specific names (like `index.md`), and optionally remove unique attachments only used by deleted notes.
-- **Quick Edit** — execute Obsidian commands directly from card titles without opening files first. Configure a command and icon to appear on each card for fast access to your most-used actions.
+- **Quick Edit** — execute Obsidian commands directly from card titles without opening files first. Configure a command and icon to appear on each card.
 - **Custom views** — configure the CMS view and add new views to your liking.
+- **Static GIF option** — force static images for animated GIFs in card thumbnails.
 
 ### Bulk Operations Toolbar
 
@@ -34,12 +35,21 @@ Each toolbar button can be individually shown or hidden in settings.
 
 Bases CMS works together with [Home Base](/plugins/home-base/) to provide a directory of all your content.
 
+### Commands
+
+- **Select all visible cards**: Select all cards in the current view.
+- **Deselect all cards**: Clear the current selection.
+
 ### Settings
 
 - **Confirm bulk operations** — toggle confirmation dialogs for bulk operations.
 - **Toolbar buttons** — show or hide individual toolbar buttons.
 - **Delete parent folder for specific file name** — enable smart folder deletion (e.g., delete parent folder when deleting `index.md`).
+- **Folder deletion file name** — specify the file name that triggers parent folder deletion (default: `index`).
 - **Delete associated unique attachments** — automatically delete attachments only used by deleted notes.
 - **Confirm deletions** — toggle confirmation dialogs before deleting files.
 - **Use home icon for CMS view** — switch between home and blocks icon in the Bases view selector.
 - **Enable quick edit** — show quick edit icon on card titles with a configurable command and icon.
+- **Embedded view refresh debounce** — delay in milliseconds before refreshing embedded views.
+- **Virtual scroll threshold** — number of items before enabling virtual scrolling.
+- **Virtual scroll buffer** — number of extra items to render above and below the visible area.
