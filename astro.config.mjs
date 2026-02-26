@@ -48,7 +48,6 @@ export default defineConfig({
 				{
 					label: 'Plugins',
 					items: [
-						{ label: 'Alias File Name History', slug: 'plugins/alias-file-name-history' },
 						{ label: 'Astro Composer', slug: 'plugins/astro-composer' },
 						{ label: 'Bases CMS', slug: 'plugins/bases-cms' },
 						{ label: 'BRAT', slug: 'plugins/brat' },
@@ -56,6 +55,7 @@ export default defineConfig({
 						{ label: 'Disable Tabs', slug: 'plugins/disable-tabs' },
 						{ label: 'Editing Toolbar', slug: 'plugins/editing-toolbar' },
 						{ label: 'Explorer Focus', slug: 'plugins/explorer-focus' },
+						{ label: 'File Name History', slug: 'plugins/file-name-history' },
 						{ label: 'Folder Notes', slug: 'plugins/folder-notes' },
 						{ label: 'Git', slug: 'plugins/git' },
 						{ label: 'Home Base', slug: 'plugins/home-base' },
