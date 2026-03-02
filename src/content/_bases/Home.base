@@ -45,7 +45,7 @@ properties:
   note.undefined:
     displayName: Undefined
 views:
-  - type: bases-cms
+  - type: cms
     name: Guides
     filters:
       and:
@@ -69,7 +69,7 @@ views:
     propertyDisplay1: file.fullname
     showTextPreview: true
     propertyLabels: above
-  - type: bases-cms
+  - type: cms
     name: Plugins
     filters:
       and:

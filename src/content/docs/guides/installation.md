@@ -18,13 +18,13 @@ The fastest way to install Vault CMS is using our dedicated CLI tool. Run this c
 
 ```bash
 # Using pnpm
-pnpm create vault-cms
+pnpm create vaultcms
 
 # Using npm
-npm create vault-cms
+npm create vaultcms
 
 # Using yarn
-yarn create vault-cms
+yarn create vaultcms
 ```
 
 ### Installation Path
@@ -43,13 +43,13 @@ If you are using a specific Astro theme like Starlight, Slate, or Chiri, you can
 
 ```bash
 # Using pnpm
-pnpm create vault-cms -- --template starlight
+pnpm create vaultcms -- --template starlight
 
 # Using npm
-npm create vault-cms -- --template starlight
+npm create vaultcms -- --template starlight
 
 # Using yarn
-yarn create vault-cms --template starlight
+yarn create vaultcms --template starlight
 ```
 
 Available templates are listed in the [Vault CMS Presets repository](https://github.com/davidvkimball/vault-cms-presets).
