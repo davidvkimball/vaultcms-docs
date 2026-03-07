@@ -43,6 +43,7 @@ export default defineConfig({
 						{ label: 'Mobile Guide', slug: 'guides/mobile-guide' },
 						{ label: 'Theme & UI', slug: 'guides/theme-and-ui' },
 						{ label: 'Vault Hotkeys', slug: 'guides/vault-hotkeys' },
+						{ label: 'Launch Checklist', slug: 'guides/launch-checklist' },
 					],
 				},
 				{
