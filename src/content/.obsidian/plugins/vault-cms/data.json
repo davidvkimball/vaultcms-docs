@@ -1,5 +1,5 @@
 {
-  "projectRoot": "C:\\Users\\david\\Development\\vault-cms-docs",
+  "projectRoot": "../../../vault-cms-docs",
   "configFilePath": "../../astro.config.mjs",
   "contentTypes": [
     {
