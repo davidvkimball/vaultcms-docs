@@ -17,11 +17,14 @@ Vault CMS is designed to be installed directly into your Astro project's content
 The fastest way to install Vault CMS is using our dedicated CLI tool. Run this command in the root of your Astro project:
 
 ```bash
-# Using pnpm
-pnpm create vaultcms
+# Using npx (recommended)
+npx create-vaultcms
 
 # Using npm
 npm create vaultcms
+
+# Using pnpm
+pnpm create vaultcms
 
 # Using yarn
 yarn create vaultcms
@@ -42,11 +45,14 @@ The CLI will automatically:
 If you are using a specific Astro theme like Starlight, Slate, or Chiri, you can install a preconfigured preset:
 
 ```bash
-# Using pnpm
-pnpm create vaultcms -- --template starlight
+# Using npx (recommended)
+npx create-vaultcms --template starlight
 
 # Using npm
-npm create vaultcms -- --template starlight
+npm create vaultcms --template starlight
+
+# Using pnpm
+pnpm create vaultcms --template starlight
 
 # Using yarn
 yarn create vaultcms --template starlight
