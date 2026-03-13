@@ -52,13 +52,13 @@ npm create vaultcms -- --template starlight
 yarn create vaultcms --template starlight
 ```
 
-Available templates are listed in the [Vault CMS Presets repository](https://github.com/davidvkimball/vault-cms-presets).
+Available templates are listed in the [Vault CMS Presets repository](https://github.com/davidvkimball/vaultcms-presets).
 
 ## Manual Installation
 
 If you prefer to install manually without the CLI:
 
-1. Download the [latest release ZIP](https://github.com/davidvkimball/vault-cms/archive/refs/heads/master.zip).
+1. Download the [latest release ZIP](https://github.com/davidvkimball/vaultcms/archive/refs/heads/master.zip).
 2. Extract the contents.
 3. Copy the `_bases` and `.obsidian` folders into your Astro project (e.g., `src/content`).
 

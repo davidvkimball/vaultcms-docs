@@ -53,4 +53,4 @@ Vault CMS supports curated configuration presets for popular Astro themes. These
 - **Slate**
 - **Chiri**
 
-Use the **Download and apply preset** command to fetch the latest configurations from the [Vault CMS Presets](https://github.com/davidvkimball/vault-cms-presets) repository.
+Use the **Download and apply preset** command to fetch the latest configurations from the [Vault CMS Presets](https://github.com/davidvkimball/vaultcms-presets) repository.

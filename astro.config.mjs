@@ -30,7 +30,7 @@ export default defineConfig({
 			   Logo is handled via custom.css to prevent the "flashing" 
 			   caused by Astro's image processing during navigation.
 			*/
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/davidvkimball/vault-cms' }],
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/davidvkimball/vaultcms' }],
 			customCss: [
 				'./src/styles/custom.css',
 			],

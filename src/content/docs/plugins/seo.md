@@ -3,6 +3,8 @@ title: SEO
 description: Auditing your content for search engines and AI.
 ---
 
+![SEO preview](attachments/seo.png)
+
 The [SEO](https://github.com/davidvkimball/obsidian-seo) plugin provides a comprehensive audit of your content for search engine rankings and AI parsing.
 
 ### Features

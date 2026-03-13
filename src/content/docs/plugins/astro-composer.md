@@ -3,6 +3,8 @@ title: Astro Composer
 description: Automating content creation and slug management.
 ---
 
+![Astro Composer demo](attachments/astro-composer.png)
+
 [Astro Composer](https://github.com/davidvkimball/obsidian-astro-composer) is handy for easily creating new notes as Astro content like blog posts or pages.
 
 Just create a new note with `CTRL + N`, type in a title in Title case or with special characters, and the note or folder name generated is a kebab-case version of the title without special characters. This is ideal for automating content page slugs.

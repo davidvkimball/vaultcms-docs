@@ -5,6 +5,8 @@ description: Every step from Obsidian vault to live website. A universal referen
 
 A step-by-step reference for going from an empty folder to a live website powered by your Obsidian vault. This checklist works with any Vault CMS-compatible theme.
 
+**Paths:** Free/open path uses Vault CMS + [Astro Modular](https://github.com/davidvkimball/astro-modular). Premium path uses [Axis](https://github.com/davidvkimball/axis) for a faster, opinionated setup with support.
+
 ## Prerequisites
 
 - [ ] Obsidian installed (desktop version)
@@ -22,8 +24,8 @@ Find an Astro theme you like. Browse the [Astro theme directory](https://astro.b
 
 Once you have your theme project locally, install Vault CMS into it:
 
-1. **CLI (recommended):** Run `npx create vaultcms` from inside your theme's project folder
-2. **Manual:** Download the Vault CMS `.zip` file from GitHub and copy its files into your theme project
+1. **CLI (recommended):** Run `pnpm create vaultcms`, `npm create vaultcms`, or `yarn create vaultcms` from inside your theme's project folder
+2. **Manual:** [Download the latest release](https://github.com/davidvkimball/vaultcms/releases/latest) and copy `_bases`, `.obsidian`, and `_GUIDE.md` into your project (typically `src/content`)
 
 ## Open in Obsidian
 

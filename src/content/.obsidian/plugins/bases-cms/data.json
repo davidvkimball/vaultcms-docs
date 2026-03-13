@@ -18,7 +18,7 @@
   "showToolbarSet": true,
   "showToolbarRemove": true,
   "showToolbarDelete": true,
-  "forceStaticGifImages": false,
+  "forceStaticGifImages": true,
   "embeddedViewRefreshDebounceMs": 250,
   "virtualScrollThreshold": 100,
   "virtualScrollBuffer": 20,
