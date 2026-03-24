@@ -47,6 +47,18 @@ export default defineConfig({
 					],
 				},
 				{
+					label: 'Themes',
+					items: [
+						{ label: 'Theme Comparison', slug: 'themes/comparison' },
+						{ label: 'Axis', slug: 'themes/axis' },
+						{ label: 'Astro Modular', slug: 'themes/astro-modular' },
+						{ label: 'Fuwari', slug: 'themes/fuwari' },
+						{ label: 'Chiri', slug: 'themes/chiri' },
+						{ label: 'Slate', slug: 'themes/slate' },
+						{ label: 'Starlight', slug: 'themes/starlight' },
+					],
+				},
+				{
 					label: 'Plugins',
 					items: [
 						{ label: 'Astro Composer', slug: 'plugins/astro-composer' },
@@ -61,6 +73,7 @@ export default defineConfig({
 						{ label: 'Git', slug: 'plugins/git' },
 						{ label: 'Home Base', slug: 'plugins/home-base' },
 						{ label: 'Image Manager', slug: 'plugins/image-manager' },
+						{ label: 'Nested Properties', slug: 'plugins/nested-properties' },
 						{ label: 'Omnisearch', slug: 'plugins/omnisearch' },
 						{ label: 'Oxygen Settings', slug: 'plugins/oxygen-settings' },
 						{ label: 'Property Over File Name', slug: 'plugins/property-over-file-name' },

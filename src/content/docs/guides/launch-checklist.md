@@ -33,6 +33,14 @@ Once you have your theme project locally, install Vault CMS into it:
 - [ ] Install the Vault CMS plugin if not already included
 - [ ] Complete the setup wizard (or select a preset if available)
 
+## Customize Your UI (Optional)
+
+Presets ship with opinionated defaults. Make it yours right away:
+
+- [ ] Change the Obsidian theme (Settings > Appearance) if the preset's theme isn't your style
+- [ ] Use UI Tweaker's "Reset all to defaults" to restore the standard Obsidian interface if the preset hides elements you want visible
+- [ ] Enable the Editing Toolbar plugin for a familiar formatting bar (bold, italic, headings, lists)
+
 ## Configure Content
 
 - [ ] Set your content types (posts, pages)

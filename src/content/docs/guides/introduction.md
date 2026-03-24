@@ -14,6 +14,16 @@ It comes with preconfigured settings, plugins, and a wizard to step you through 
 2. **Emphasis on customization and modularity**: Every part of the system is replaceable or adjustable.
 3. **Visual parity between backend and frontend**: What you see in Obsidian should closely match what your readers see.
 
+## Compatibility
+
+Vault CMS works with most Astro themes. The setup wizard automatically detects your content types, frontmatter properties, and folder structure.
+
+**Works best with:** Themes that use flat frontmatter properties (title, date, description, tags, draft, image, etc.). This covers the majority of blog, portfolio, and documentation themes.
+
+**Limited support for:** Themes with deeply nested YAML properties (e.g. `hero.image.file`, `settings.layout.columns`, `sidebar.order`). Obsidian's properties panel only supports flat key-value pairs by default. Install the [Nested Properties](/plugins/nested-properties/) plugin to edit nested YAML visually, or use the [Data Files Editor](/plugins/data-files-editor/) plugin to edit the raw YAML directly.
+
+See the [Theme Comparison](/themes/comparison/) for a breakdown of which themes work best with Vault CMS.
+
 ## Default Settings
 
 It's an opinionated Obsidian vault, but allows for lots of customizability. Here's what's on by default.

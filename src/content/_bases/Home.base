@@ -93,3 +93,27 @@ views:
     propertyDisplay1: file.fullname
     showTextPreview: true
     propertyLabels: above
+  - type: cms
+    name: Themes
+    filters:
+      and:
+        - file.folder.startsWith("docs/themes")
+    groupBy:
+      property: file.folder
+      direction: ASC
+    sort:
+      - property: file.name
+        direction: ASC
+    imageFormat: cover
+    titleProperty: note.title
+    dateProperty: file.ctime
+    descriptionProperty: note.description
+    showTags: false
+    showDate: false
+    showDraftStatus: false
+    customizeNewButton: true
+    newNoteLocation: docs/guides
+    fallbackToEmbeds: if-empty
+    propertyDisplay1: file.fullname
+    showTextPreview: true
+    propertyLabels: above

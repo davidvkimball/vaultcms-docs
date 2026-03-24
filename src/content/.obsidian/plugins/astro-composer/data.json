@@ -18,7 +18,7 @@
       "id": "content-1770423913278",
       "name": "Guides",
       "folder": "docs/guides",
-      "linkBasePath": "/guides/",
+      "linkBasePath": "/docs/guides/",
       "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n--\n",
       "enabled": true,
       "creationMode": "file",
@@ -31,7 +31,7 @@
       "id": "content-1770423963104",
       "name": "Plugins",
       "folder": "docs/plugins",
-      "linkBasePath": "/plugins/",
+      "linkBasePath": "/docs/plugins/",
       "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n",
       "enabled": true,
       "creationMode": "file",
@@ -39,6 +39,20 @@
       "ignoreSubfolders": false,
       "enableUnderscorePrefix": false,
       "useMdxExtension": false
+    },
+    {
+      "id": "content-1773642988231",
+      "name": "Themes",
+      "folder": "docs/themes",
+      "linkBasePath": "/docs/themes/",
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n",
+      "enabled": true,
+      "creationMode": "file",
+      "indexFileName": "",
+      "ignoreSubfolders": false,
+      "enableUnderscorePrefix": false,
+      "useMdxExtension": false,
+      "modifiedDateField": ""
     }
   ],
   "migrationCompleted": true,
@@ -53,6 +67,7 @@
   "draftProperty": "",
   "draftLogic": "true-is-draft",
   "publishDateField": "",
+  "renameOnTitleClick": false,
   "updateModifiedDate": false,
   "modifiedDateField": ""
 }
