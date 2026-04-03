@@ -72,7 +72,7 @@
   "loggingVerboseEnabled": false,
   "debuggingMode": false,
   "notificationsEnabled": true,
-  "globalTokenName": "brat-github-token",
+  "globalTokenName": "brat",
   "personalAccessToken": "",
   "selectLatestPluginVersionByDefault": false,
   "allowIncompatiblePlugins": false

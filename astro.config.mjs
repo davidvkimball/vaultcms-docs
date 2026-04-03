@@ -15,6 +15,14 @@ export default defineConfig({
 			title: 'Vault CMS',
 			head: [
 				{
+					tag: 'meta',
+					attrs: { property: 'og:image', content: '/assets/opengraph.png' },
+				},
+				{
+					tag: 'meta',
+					attrs: { name: 'twitter:image', content: '/assets/opengraph.png' },
+				},
+				{
 					tag: 'script',
 					content: `
 						window.addEventListener('DOMContentLoaded', () => {
@@ -36,10 +44,28 @@ export default defineConfig({
 			],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Get started',
 					items: [
 						{ label: 'Introduction', slug: 'guides/introduction' },
 						{ label: 'Installation', slug: 'guides/installation' },
+						{ label: 'Presets', slug: 'guides/presets' },
+					],
+				},
+				{
+					label: 'Concepts',
+					items: [
+						{ label: 'How it works', slug: 'concepts/how-it-works' },
+						{ label: 'Content types', slug: 'concepts/content-types' },
+						{ label: 'Publishing', slug: 'concepts/publishing' },
+					],
+				},
+				{
+					label: 'Guides',
+					items: [
+						{ label: 'Writing content', slug: 'guides/writing-content' },
+						{ label: 'Frontmatter', slug: 'guides/frontmatter' },
+						{ label: 'Images in content', slug: 'guides/images' },
+						{ label: 'SEO for content', slug: 'guides/seo' },
 						{ label: 'Mobile Guide', slug: 'guides/mobile-guide' },
 						{ label: 'Theme & UI', slug: 'guides/theme-and-ui' },
 						{ label: 'Vault Hotkeys', slug: 'guides/vault-hotkeys' },
@@ -83,6 +109,13 @@ export default defineConfig({
 						{ label: 'UI Tweaker', slug: 'plugins/ui-tweaker' },
 						{ label: 'Vault CMS (Plugin)', slug: 'plugins/vault-cms' },
 						{ label: 'Zen Mode', slug: 'plugins/zen-mode' },
+					],
+				},
+				{
+					label: 'Troubleshooting',
+					items: [
+						{ label: 'FAQ', slug: 'guides/troubleshooting-faq' },
+						{ label: 'Common issues', slug: 'guides/troubleshooting-common-issues' },
 					],
 				},
 			],

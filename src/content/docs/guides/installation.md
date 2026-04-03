@@ -1,78 +1,88 @@
 ---
 title: Installation
-description: How to install Vault CMS using the CLI or manual methods.
+description: CLI quick start, presets, manual install, and what the installer changes on disk.
 ---
 
-Vault CMS is designed to be installed directly into your Astro project's content directory. But it can work at the project's root level, too. 
+Vault CMS installs into your Astro **content** directory by default (usually `src/content`); installing at the **project root** is also supported.
 
 ## Prerequisites
 
-- [Node.js 22.x](https://nodejs.org/en)
-- [Astro project](https://astro.build/) (supports [most themes](astro.build/themes))
-- [Obsidian](https://obsidian.md)
-- [Git](https://git-scm.com/)
+- **[Node.js](https://nodejs.org/)** — **20 or later**; **22.x** is a good default for current Astro tooling. Required to run `create-vaultcms`.
+- **[Astro](https://astro.build/)** project (see [themes](https://astro.build/themes))
+- **[Obsidian](https://obsidian.md)** (desktop)
+- **[Git](https://git-scm.com/)** — for publishing from Obsidian and normal project version control
 
-## CLI Installation (Recommended)
+## CLI installation (recommended)
 
-The fastest way to install Vault CMS is using our dedicated CLI tool. Run this command in the root of your Astro project:
+From your Astro project root (the folder that contains `astro.config.mjs`):
 
 ```bash
-# Using npx (recommended)
 npx create-vaultcms
-
-# Using npm
-npm create vaultcms
-
-# Using pnpm
-pnpm create vaultcms
-
-# Using yarn
-yarn create vaultcms
+# or: npm create vaultcms | pnpm create vaultcms | yarn create vaultcms
 ```
 
-### Installation Path
-When you run the command, it will ask you where to install the vault. 
-- **Default**: `src/content` (Recommended for Astro projects)
-- **Root**: You can also install it in the root of your project if you prefer.
+1. The CLI detects your Astro project and may list content collections.
+2. Choose the install location — **default `src/content`**, or `.` for the project root.
+3. Optional: choose a [preset](/guides/presets/) for your theme (`--template` or the interactive prompt).
+4. When asked, open Obsidian and **Open folder as vault** on the directory that was just populated.
+5. Complete the setup wizard (**Vault CMS: Open Wizard**) if it does not open automatically.
 
-The CLI will automatically:
-1. Download the latest Vault CMS configuration.
-2. Extract the `_bases` and `.obsidian` folders.
-3. Update your `.gitignore` with the recommended excludes.
+### What the installer does
 
-## Preset Templates
+- Copies **`.obsidian/`** (settings, community plugins, hotkeys)
+- Copies **`_bases/`** (Home.base dashboard)
+- Copies **`_GUIDE.md`** (in-vault quick reference)
+- Updates **`.gitignore`** at the project root with Obsidian workspace excludes (see below)
+- Adjusts internal paths when you install at root vs `src/content`
 
-If you are using a specific Astro theme like Starlight, Slate, or Chiri, you can install a preconfigured preset:
+### Preset templates
 
 ```bash
-# Using npx (recommended)
 npx create-vaultcms --template starlight
-
-# Using npm
-npm create vaultcms --template starlight
-
-# Using pnpm
-pnpm create vaultcms --template starlight
-
-# Using yarn
-yarn create vaultcms --template starlight
 ```
 
-Available templates are listed in the [Vault CMS Presets repository](https://github.com/davidvkimball/vaultcms-presets).
+Other package managers and template names work the same way. See [Presets](/guides/presets/) for positional `npx create-vaultcms starlight` and the full preset list on GitHub.
 
-## Manual Installation
+## Manual installation
 
-If you prefer to install manually without the CLI:
+Use manual install if you cannot run Node, want to inspect files first, or are wiring a custom monorepo layout. The CLI is still the recommended path for most users.
 
-1. Download the [latest release ZIP](https://github.com/davidvkimball/vaultcms/archive/refs/heads/master.zip).
-2. Extract the contents.
-3. Copy the `_bases` and `.obsidian` folders into your Astro project (e.g., `src/content`).
+1. **Download** the [Vault CMS ZIP](https://github.com/davidvkimball/vaultcms/archive/refs/heads/master.zip) or clone `https://github.com/davidvkimball/vaultcms.git`.
+2. **Choose the target** inside your Astro project — usually `src/content` or the repo root (same tradeoffs as the CLI).
+3. **Copy** from the Vault CMS tree into that target:
+   - `.obsidian/`
+   - `_bases/`
+   - `_GUIDE.md`
 
-## Post-Installation
+:::caution
+If `.obsidian` already exists in the target folder, back it up first. Copying overwrites those files.
+:::
 
-Once installed, open and initialize with Obsidian:
-1. Open Obsidian and select **Open folder as vault**.
-2. Select the folder where you placed the `.obsidian` directory.
-3. The **Vault CMS Plugin** will automatically detect your Astro project.
-4. A setup wizard will guide you through configuring your content types and properties.
-5. You're ready to start writing!
+**PowerShell** (run from your machine, adjusting paths):
+
+```powershell
+Copy-Item -Recurse -Force .\vaultcms\.obsidian .\your-project\src\content\
+Copy-Item -Recurse -Force .\vaultcms\_bases .\your-project\src\content\
+Copy-Item -Force .\vaultcms\_GUIDE.md .\your-project\src\content\
+```
+
+4. In Obsidian: **Manage vaults → Open folder as vault** → select that directory.
+5. Run **Vault CMS: Open Wizard** from the command palette.
+6. **Append to `.gitignore`** at the Astro project root (the CLI does this for you automatically):
+
+```text
+# Vault CMS / Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.ref/
+```
+
+## After installation
+
+- `Ctrl/Cmd + M` or the **Home** icon — content dashboard  
+- `Ctrl/Cmd + N` — new content (with Astro Composer templates when configured)  
+- **Git: Push** — publish; see [Publishing](/concepts/publishing/) and [Git plugin](/plugins/git/)
+
+## Problems?
+
+See [Common issues](/guides/troubleshooting-common-issues/) and [FAQ](/guides/troubleshooting-faq/).

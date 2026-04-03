@@ -2,11 +2,14 @@
 title: Introduction
 description: Overview, philosophy, and default settings for Vault CMS.
 ---
-## What is Vault CMS? 
 
-Vault CMS lets you use [Obsidian](https://obsidian.md) as a content management system for your [Astro](https://astro.build) website. 
+## What is Vault CMS?
 
-It comes with preconfigured settings, plugins, and a wizard to step you through all of it.
+Vault CMS lets you use [Obsidian](https://obsidian.md) as a content management system for your [Astro](https://astro.build) site. Content stays in plain Markdown in your repo—no separate CMS server. You get preconfigured settings, plugins, and a setup wizard.
+
+**Learn the flow:** [How it works](/concepts/how-it-works/) · [Installation](/guides/installation/) · [Publishing](/concepts/publishing/)
+
+**Community:** [Setup walkthrough (YouTube)](https://www.youtube.com/watch?v=3zeqJ5tqmaQ) · [Discord](https://discord.gg/gyrNHAwHK8)
 
 ## Philosophy 
 
@@ -47,7 +50,7 @@ It's an opinionated Obsidian vault, but allows for lots of customizability. Here
 - Sync
 
 ### Enabled Community Plugins: 
-- [Alias File Name History](/plugins/alias-file-name-history/)
+- [File Name History](/plugins/file-name-history/)
 - [Astro Composer](/plugins/astro-composer/)
 - [Bases CMS](/plugins/bases-cms/)
 - [BRAT](/plugins/brat/)
