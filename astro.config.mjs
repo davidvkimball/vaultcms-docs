@@ -63,7 +63,7 @@ export default defineConfig({
 					label: 'Guides',
 					items: [
 						{ label: 'Writing content', slug: 'guides/writing-content' },
-						{ label: 'Frontmatter', slug: 'guides/frontmatter' },
+						{ label: 'Frontmatter Properties', slug: 'guides/frontmatter-properties' },
 						{ label: 'Images in content', slug: 'guides/images' },
 						{ label: 'SEO for content', slug: 'guides/seo' },
 						{ label: 'Mobile Guide', slug: 'guides/mobile-guide' },

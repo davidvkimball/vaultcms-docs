@@ -3,3 +3,15 @@
   to = "/guides/introduction/"
   status = 301
   force = true
+
+# Renamed page: /guides/frontmatter/ → /guides/frontmatter-properties/
+# (Astro calls them "frontmatter", Obsidian calls them "properties" — title is now the compromise.)
+[[redirects]]
+  from = "/guides/frontmatter"
+  to = "/guides/frontmatter-properties/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/frontmatter/"
+  to = "/guides/frontmatter-properties/"
+  status = 301

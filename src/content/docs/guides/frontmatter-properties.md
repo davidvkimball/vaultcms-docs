@@ -1,9 +1,9 @@
 ---
-title: Frontmatter
-description: YAML frontmatter fields Vault CMS and Astro use for posts and pages.
+title: Frontmatter Properties
+description: YAML frontmatter fields — Obsidian calls them properties — that Vault CMS and Astro use for posts and pages.
 ---
 
-Frontmatter is the YAML block at the top of each Markdown file, between `---` lines. Astro and your theme read it for title, dates, SEO, images, and drafts.
+Frontmatter properties are the YAML block at the top of each Markdown file, between `---` lines. Astro calls them **frontmatter**; Obsidian calls them **properties** — same thing. Astro and your theme read these values for title, dates, SEO, images, and drafts.
 
 ## Default template
 
@@ -47,7 +47,7 @@ Placeholders depend on your content type and Astro Composer settings.
 New drafts often set `draft: true`. Set `draft: false` or remove `draft` when you intend to publish.
 :::
 
-## Normalize frontmatter
+## Normalize properties
 
 **Astro Composer: Standardize Properties** (command palette) can align fields across files.
 
