@@ -9,7 +9,21 @@ Vault CMS lets you use [Obsidian](https://obsidian.md) as a content management s
 
 **Learn the flow:** [How it works](/concepts/how-it-works/) · [Installation](/guides/installation/) · [Publishing](/concepts/publishing/)
 
-**Community:** [Setup walkthrough (YouTube)](https://www.youtube.com/watch?v=3zeqJ5tqmaQ) · [Discord](https://discord.gg/gyrNHAwHK8)
+**Community:** [Discord](https://discord.gg/gyrNHAwHK8)
+
+## Setup walkthrough
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 1.5rem 0;">
+  <iframe
+    src="https://www.youtube.com/embed/MnXoikTajfI"
+    title="Vault CMS setup walkthrough"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+  ></iframe>
+</div>
 
 ## Philosophy 
 
