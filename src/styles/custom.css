@@ -120,3 +120,20 @@ h6 {
 h1 {
     text-align: left;
 }
+
+/*
+   Agent-facing utility: visually hidden but present in the DOM and the
+   accessibility tree, so crawlers and AI agents pick up directives like the
+   llms.txt link on every page. Standard "screen-reader only" pattern.
+*/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
