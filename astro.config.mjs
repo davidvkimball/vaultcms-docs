@@ -56,6 +56,7 @@ export default defineConfig({
 						{ label: 'Introduction', slug: 'guides/introduction' },
 						{ label: 'Installation', slug: 'guides/installation' },
 						{ label: 'Presets', slug: 'guides/presets' },
+						{ label: 'MCP server (AI agents)', slug: 'guides/mcp-server' },
 					],
 				},
 				{

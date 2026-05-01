@@ -5,6 +5,10 @@ description: CLI quick start, presets, manual install, and what the installer ch
 
 Vault CMS installs into your Astro **content** directory by default (usually `src/content`); installing at the **project root** is also supported.
 
+:::tip
+Using Claude Code, Cursor, or Claude Desktop? Skip the CLI and let your AI agent handle the install — see the [MCP server guide](/guides/mcp-server/).
+:::
+
 ## Prerequisites
 
 - **[Node.js](https://nodejs.org/)** — **20 or later**; **22.x** is a good default for current Astro tooling. Required to run `create-vaultcms`.

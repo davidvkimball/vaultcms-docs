@@ -9,6 +9,8 @@ Vault CMS lets you use [Obsidian](https://obsidian.md) as a content management s
 
 **Learn the flow:** [How it works](/concepts/how-it-works/) · [Installation](/guides/installation/) · [Publishing](/concepts/publishing/)
 
+**Using an AI agent?** Vault CMS ships an [MCP server](/guides/mcp-server/) so Claude Code, Cursor, Claude Desktop, and other agents can install and configure it for you with a single sentence.
+
 **Community:** [Discord](https://discord.gg/gyrNHAwHK8)
 
 ## Setup walkthrough
