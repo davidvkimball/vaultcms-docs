@@ -59,8 +59,8 @@ All themes listed here support dark mode with a theme toggle.
 
 ## Choosing a Theme
 
-- **Want a full-featured personal site with zero config file editing?** [Axis](/themes/axis) or [Astro Modular](/themes/astro-modular).
-- **Want a polished blog with search, transitions, and categories?** [Fuwari](/themes/fuwari).
-- **Want a minimal blog to get started quickly?** [Chiri](/themes/chiri).
-- **Want a clean blog with search?** [Slate](/themes/slate).
-- **Want a documentation site?** [Starlight](/themes/starlight).
+- **Want a full-featured personal site with zero config file editing?** [Axis](/themes/axis/) or [Astro Modular](/themes/astro-modular/).
+- **Want a polished blog with search, transitions, and categories?** [Fuwari](/themes/fuwari/).
+- **Want a minimal blog to get started quickly?** [Chiri](/themes/chiri/).
+- **Want a clean blog with search?** [Slate](/themes/slate/).
+- **Want a documentation site?** [Starlight](/themes/starlight/).
