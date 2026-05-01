@@ -1,7 +1,13 @@
 ---
-import Default from '@astrojs/starlight/components/MarkdownContent.astro';
+import Default from '@astrojs/starlight/components/PageTitle.astro';
 ---
 
+{/*
+	Agent-facing directive — rendered inside <main> immediately before the
+	page H1 so crawlers and AI agents pick up the canonical index reference
+	at the very top of the converted content. Visually hidden via .sr-only.
+	See https://afdocs.dev.
+*/}
 <blockquote class="afdocs-llms-directive sr-only">
 	<p>
 		For the complete documentation index, see <a href="/llms.txt">llms.txt</a>.

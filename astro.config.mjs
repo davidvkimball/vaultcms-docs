@@ -15,7 +15,10 @@ export default defineConfig({
 		starlight({
 			title: 'Vault CMS',
 			components: {
-				MarkdownContent: './src/components/MarkdownContent.astro',
+				// Render the agent-facing llms.txt directive at the very top of
+				// <main>, immediately before the page H1, so the converted content
+				// has it within the first ~50% of the document.
+				PageTitle: './src/components/PageTitle.astro',
 			},
 			head: [
 				{
