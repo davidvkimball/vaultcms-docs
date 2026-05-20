@@ -6,7 +6,7 @@ aliases:
 ---
 
 
-[File Name History](https://github.com/davidvkimball/obsidian-file-name-history) helps you keep track of old post or page URLs if you rename your files. Old file names and parent folder names are stored as aliases in the `aliases` property by default, making it ideal for generating redirect rules in your Astro templates.
+[File Name History](https://community.obsidian.md/plugins/file-name-history) helps you keep track of old post or page URLs if you rename your files. Old file names and parent folder names are stored as aliases in the `aliases` property by default, making it ideal for generating redirect rules in your Astro templates.
 
 ### Features
 

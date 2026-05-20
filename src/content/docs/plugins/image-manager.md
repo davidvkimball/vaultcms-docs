@@ -3,7 +3,7 @@ title: Image Manager
 description: Managing images and SEO assets.
 ---
 
-[Image Manager](https://github.com/davidvkimball/obsidian-image-manager) allows you to quickly drag and drop image files, insert images with a command, or paste images directly from your clipboard. It unifies functionality from multiple image-related plugins into one cohesive experience.
+[Image Manager](https://community.obsidian.md/plugins/image-manager) allows you to quickly drag and drop image files, insert images with a command, or paste images directly from your clipboard. It unifies functionality from multiple image-related plugins into one cohesive experience.
 
 ### Features
 

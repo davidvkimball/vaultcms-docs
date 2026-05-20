@@ -5,7 +5,7 @@ description: Focused writing environment by removing UI distractions.
 
 ![Zen Mode desktop](https://raw.githubusercontent.com/paperbenni/obsidian-zenmode/main/images/zen_desktop.png)
 
-[Zen Mode](https://github.com/paperbenni/obsidian-zenmode) offers a distraction-free writing environment by hiding all UI elements except your content.
+[Zen Mode](https://community.obsidian.md/plugins/zenmode) offers a distraction-free writing environment by hiding all UI elements except your content.
 
 ### Features
 

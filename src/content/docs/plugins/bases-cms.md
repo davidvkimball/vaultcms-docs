@@ -5,7 +5,7 @@ description: Managing your content with a grid-based interface.
 
 ![Bases CMS card view](attachments/bases-cms.png)
 
-[Bases CMS](https://github.com/davidvkimball/obsidian-bases-cms) lets you treat a grid of content like a content management system. Requires the [Bases](https://help.obsidian.md/bases) core plugin to be enabled.
+[Bases CMS](https://community.obsidian.md/plugins/bases-cms) lets you treat a grid of content like a content management system. Requires the [Bases](https://help.obsidian.md/bases) core plugin to be enabled.
 
 ### Features
 

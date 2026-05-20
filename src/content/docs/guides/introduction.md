@@ -84,4 +84,5 @@ It's an opinionated Obsidian vault, but allows for lots of customizability. Here
 - [Tag Wrangler](/plugins/tag-wrangler/)
 - [UI Tweaker](/plugins/ui-tweaker/)
 - [Vault CMS (Plugin)](/plugins/vault-cms/)
+- [Vault Nickname](/plugins/vault-nickname/)
 - [Zen Mode](/plugins/zen-mode/)

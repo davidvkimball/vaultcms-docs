@@ -116,6 +116,7 @@ export default defineConfig({
 						{ label: 'Tag Wrangler', slug: 'plugins/tag-wrangler' },
 						{ label: 'UI Tweaker', slug: 'plugins/ui-tweaker' },
 						{ label: 'Vault CMS (Plugin)', slug: 'plugins/vault-cms' },
+						{ label: 'Vault Nickname', slug: 'plugins/vault-nickname' },
 						{ label: 'Zen Mode', slug: 'plugins/zen-mode' },
 					],
 				},

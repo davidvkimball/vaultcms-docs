@@ -5,7 +5,7 @@ description: Load beta plugins from GitHub repositories.
 
 [BRAT](https://github.com/TfTHacker/obsidian42-brat) (Beta Reviewer's Auto-update Tool) installs and manages beta versions of Obsidian plugins and themes directly from GitHub repositories.
 
-Future versions of this vault will remove BRAT-installed plugins in favor of official releases as they become available.
+BRAT is now used by Vault CMS only to install the [Vault CMS plugin](/plugins/vault-cms/) itself, which is still in beta and not yet in the official Obsidian community directory. All other Vault CMS companion plugins have migrated to the official directory and install through the standard Community Plugins browser.
 
 ### Features
 

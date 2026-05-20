@@ -3,7 +3,7 @@ title: UI Tweaker
 description: Hide and adjust UI elements in Obsidian.
 ---
 
-[UI Tweaker](https://github.com/davidvkimball/obsidian-ui-tweaker) lets you hide and adjust UI elements to your liking. Open it up and customize your interface to remove distractions, rearrange elements, or customize icons.
+[UI Tweaker](https://community.obsidian.md/plugins/ui-tweaker) lets you hide and adjust UI elements to your liking. Open it up and customize your interface to remove distractions, rearrange elements, or customize icons.
 
 UI Tweaker provides three visibility states for most elements:
 

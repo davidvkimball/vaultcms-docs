@@ -3,7 +3,7 @@ title: Nested Properties
 description: Edit nested YAML properties natively in Obsidian's properties panel.
 ---
 
-[Nested Properties](https://github.com/mnaoumov/obsidian-nested-properties) adds support for nested YAML structures in Obsidian's properties panel. Originally created by [mnaoumov](https://github.com/mnaoumov).
+[Nested Properties](https://community.obsidian.md/plugins/nested-properties) adds support for nested YAML structures in Obsidian's properties panel. Originally created by [mnaoumov](https://github.com/mnaoumov).
 
 Some Astro themes use nested properties in their content schemas, for example `hero.image.file` or `sidebar.order`. Without this plugin, Obsidian's properties panel can only display flat key-value pairs, requiring you to edit nested YAML manually with the [Data Files Editor](/plugins/data-files-editor/) plugin.
 

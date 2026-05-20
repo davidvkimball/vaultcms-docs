@@ -5,7 +5,7 @@ description: Simplify your file explorer view to the relevant directory.
 
 ![Explorer Focus preview](attachments/explorer-focus.png)
 
-With [Explorer Focus](https://github.com/davidvkimball/obsidian-explorer-focus), you can simplify your file explorer view to just the directory that's immediately relevant to your currently-open file.
+With [Explorer Focus](https://community.obsidian.md/plugins/explorer-focus), you can simplify your file explorer view to just the directory that's immediately relevant to your currently-open file.
 
 ### Focus Modes
 
