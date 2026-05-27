@@ -15,9 +15,9 @@ Write in Obsidian  →  Git push  →  CI/CD build  →  Live site
 
 ## Publish steps
 
-1. **Finish the draft** — When the post is ready, set `draft: false` or remove `draft` (see below).
-2. **Push** — `Ctrl/Cmd + Shift + S` for **Git: Push**, or use the **up-arrow** in the status bar.
-3. **Wait for the build** — Usually tens of seconds to a few minutes; check your host’s dashboard if needed.
+1. **Finish the draft**: When the post is ready, set `draft: false` or remove `draft` (see below).
+2. **Push**: `Ctrl/Cmd + Shift + S` for **Git: Push**, or use the **up-arrow** in the status bar.
+3. **Wait for the build**: Usually tens of seconds to a few minutes; check your host’s dashboard if needed.
 
 Plugin details: [Git](/plugins/git/).
 

@@ -49,7 +49,7 @@ Absolute `https://` URLs behave consistently across local dev and production. Us
 
 ## Practices
 
-- **Alt text** — Describe the image for accessibility and SEO.  
-- **OG images** — Set `imageOG: true` when you want a specific social preview; themes may fall back to a default otherwise.  
+- **Alt text**: Describe the image for accessibility and SEO.  
+- **OG images**: Set `imageOG: true` when you want a specific social preview; themes may fall back to a default otherwise.  
 
 Plugin reference: [Image Manager](/plugins/image-manager/).

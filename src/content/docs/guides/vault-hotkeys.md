@@ -22,7 +22,7 @@ Here's a guide for some important hotkeys set especially for this theme:
 | Insert remote image into property | `CTRL + SHIFT + '` |
 | Insert callout | `CTRL + SHIFT + C` |
 | Rename current content | `CTRL + R` |
-| Open [SEO audit](/plugins/seo/) | `CTRL + SHIFT + A` |
+| Open [Search Engine Optimization](/plugins/seo/) audit | `CTRL + SHIFT + A` |
 | Open Terminal | `CTRL + SHIFT + D` |
 | Open Astro config file | `CTRL + SHIFT + ,` |
 | Commit and sync with [Git](/plugins/git/) | `CTRL + SHIFT + S` |

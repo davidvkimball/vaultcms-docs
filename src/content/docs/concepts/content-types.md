@@ -3,7 +3,7 @@ title: Content types
 description: How Vault CMS maps folders and routes to Astro content collections and URLs.
 ---
 
-A **content type** in Vault CMS lines up with an [Astro content collection](https://docs.astro.build/en/guides/content-collections/)—a folder under `src/content` where your Markdown lives. Each type has its own folder, frontmatter template, and URL pattern on the site.
+A **content type** in Vault CMS lines up with an [Astro content collection](https://docs.astro.build/en/guides/content-collections/), a folder under `src/content` where your Markdown lives. Each type has its own folder, frontmatter template, and URL pattern on the site.
 
 ## How content types are detected
 
@@ -51,14 +51,14 @@ Exact rules come from your theme and routes. **Home.base** uses a slug formula s
 
 Typical columns:
 
-- **Title** — from `title` in frontmatter  
-- **Path** — computed URL slug for the live site  
-- **Date** — from `date` or `pubDate`  
-- **Draft** — whether the file is treated as a draft  
+- **Title**: from `title` in frontmatter  
+- **Path**: computed URL slug for the live site  
+- **Date**: from `date` or `pubDate`  
+- **Draft**: whether the file is treated as a draft  
 
 ## Creating content in a specific type
 
-`Ctrl/Cmd + N` uses your **default** content type (often `posts`). To target another folder, select that folder in the file explorer first, then create the note—or move an existing file into the right folder.
+`Ctrl/Cmd + N` uses your **default** content type (often `posts`). To target another folder, select that folder in the file explorer first, then create the note, or move an existing file into the right folder.
 
 :::tip
 [Astro Composer](/plugins/astro-composer/) can apply the right frontmatter template when a content type matches the folder. New notes often start with `draft: true` so nothing goes live by accident.

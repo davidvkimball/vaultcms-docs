@@ -67,11 +67,11 @@ UI Tweaker provides three visibility states for most elements:
 
 - **Explorer Tab**: Add custom command buttons to the file explorer navigation area with custom icons, colors, toggle icons, device filtering, and drag-and-drop reordering.
 - **Tab Bar Tab**: Add custom command buttons to page headers with the same customization options.
-- **Status Bar Tab**: Unified management of existing and custom status bar items — reorder, hide/show, add custom buttons, and customize colors.
+- **Status Bar Tab**: Unified management of existing and custom status bar items, reorder, hide/show, add custom buttons, and customize colors.
 
 #### Native Explorer Button Controls
 
-- Customize native explorer buttons (new note, new folder, sort order, auto-reveal, collapse all) — show/hide, custom colors, and icon overrides.
+- Customize native explorer buttons (new note, new folder, sort order, auto-reveal, collapse all), show/hide, custom colors, and icon overrides.
 
 #### Advanced
 

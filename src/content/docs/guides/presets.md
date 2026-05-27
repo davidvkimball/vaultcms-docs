@@ -35,10 +35,10 @@ npx create-vaultcms starlight
 
 Typical behavior (exact steps depend on the preset):
 
-- **Install target** — e.g. Starlight may default to `src/content` without an extra prompt.  
-- **Vault-relative paths** — [Vault CMS plugin](/plugins/vault-cms/) config points at your project root correctly.  
-- **`_GUIDE.md`** — Pulled from the main Vault CMS repo so the in-vault guide stays current.  
-- **`.gitignore`** — Obsidian workspace state entries are added so only useful config is committed.  
+- **Install target**: e.g. Starlight may default to `src/content` without an extra prompt.  
+- **Vault-relative paths**: [Vault CMS plugin](/plugins/vault-cms/) config points at your project root correctly.  
+- **`_GUIDE.md`**: Pulled from the main Vault CMS repo so the in-vault guide stays current.  
+- **`.gitignore`**: Obsidian workspace state entries are added so only useful config is committed.  
 
 ## Astro Modular
 

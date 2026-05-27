@@ -17,7 +17,7 @@ Yes. Vault CMS is open source (MIT). Some bundled plugins from the same author o
 
 ### Where is my content stored?
 
-As `.md` files in your Astro content directory (often `src/content/`). No Vault CMS database—files on disk and in Git.
+As `.md` files in your Astro content directory (often `src/content/`). No Vault CMS database, files on disk and in Git.
 
 ### Can I use Vault CMS on multiple machines?
 
@@ -31,7 +31,7 @@ From your project directory:
 npx create-vaultcms
 ```
 
-This refreshes `.obsidian` and `_bases`. Your Markdown content in collections is not removed by that process—still use Git and backups as usual.
+This refreshes `.obsidian` and `_bases`. Your Markdown content in collections is not removed by that process, still use Git and backups as usual.
 
 ### Does Vault CMS support MDX?
 

@@ -3,7 +3,7 @@ title: SEO for content
 description: Use the SEO plugin and frontmatter to improve search visibility.
 ---
 
-The [SEO](/plugins/seo/) plugin analyzes the open note: title, description, keyword usage, headings, and length. Open the panel with `Ctrl/Cmd + Shift + A`.
+The [Search Engine Optimization](/plugins/seo/) plugin analyzes the open note: title, description, keyword usage, headings, and length. Open the panel with `Ctrl/Cmd + Shift + A`.
 
 ## What it checks
 
@@ -37,9 +37,9 @@ Run the SEO check while `draft: true`, fix flagged items, then clear the draft f
 
 ## Practices
 
-- **Titles** — Clear, specific; keyword toward the front when natural.  
-- **First paragraph** — Mention the topic early.  
-- **Headings** — Use `##` / `###` to outline the page.  
-- **Depth** — Prefer thorough coverage over very short posts if you care about rankings.  
+- **Titles**: Clear, specific; keyword toward the front when natural.  
+- **First paragraph**: Mention the topic early.  
+- **Headings**: Use `##` / `###` to outline the page.  
+- **Depth**: Prefer thorough coverage over very short posts if you care about rankings.  
 
-Full plugin behavior: [SEO plugin](/plugins/seo/).
+Full plugin behavior: [Search Engine Optimization plugin](/plugins/seo/).

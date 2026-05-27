@@ -17,15 +17,15 @@ New notes often include `draft: true` so you do not publish by accident.
 
 The **Home** view is a grid of your content: drafts, metadata, and bulk actions.
 
-- `Ctrl/Cmd + M` — open Home  
+- `Ctrl/Cmd + M`, open Home  
 - Or click the **Home** icon in the tab bar  
 
 See [Home Base](/plugins/home-base/) and [Bases CMS](/plugins/bases-cms/).
 
 ## Edit vs reading mode
 
-- **Editing** — write with the live toolbar.  
-- **Reading** — preview rendered Markdown.  
+- **Editing**: write with the live toolbar.  
+- **Reading**: preview rendered Markdown.  
 
 Toggle with the book icon or `Ctrl/Cmd + E`.
 

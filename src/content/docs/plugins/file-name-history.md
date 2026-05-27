@@ -10,13 +10,13 @@ aliases:
 
 ### Features
 
-- **Automatic file name change tracking** — when a file or parent folder is renamed (for example via [Astro Composer](/plugins/astro-composer/)'s `CTRL + R`), the old file name is stored as an alias (or another history property you define) automatically after a configurable timeout.
-- **Parent folder tracking** — optionally stores the old parent folder name as a string when renamed (off by default).
-- **Ignore patterns** — skip storing history for file names or folder names matching regex patterns (e.g., `^_` for underscore prefixes, `^Untitled$`). Supports wildcard folder patterns (`/**`, `/*`).
-- **Case sensitivity** — toggle to treat case differences (e.g., "Note" vs. "note") as unique list items.
-- **Folder filtering** — restrict tracking to specific folders or exclude others.
-- **File extension support** — tracks `.md` files by default, with support for custom extensions (e.g., `.mdx`).
-- **Auto-create properties** — optionally creates the `aliases` or relevant property if missing (on by default).
+- **Automatic file name change tracking**: when a file or parent folder is renamed (for example via [Astro Composer](/plugins/astro-composer/)'s `CTRL + R`), the old file name is stored as an alias (or another history property you define) automatically after a configurable timeout.
+- **Parent folder tracking**: optionally stores the old parent folder name as a string when renamed (off by default).
+- **Ignore patterns**: skip storing history for file names or folder names matching regex patterns (e.g., `^_` for underscore prefixes, `^Untitled$`). Supports wildcard folder patterns (`/**`, `/*`).
+- **Case sensitivity**: toggle to treat case differences (e.g., "Note" vs. "note") as unique list items.
+- **Folder filtering**: restrict tracking to specific folders or exclude others.
+- **File extension support**: tracks `.md` files by default, with support for custom extensions (e.g., `.mdx`).
+- **Auto-create properties**: optionally creates the `aliases` or relevant property if missing (on by default).
 
 ### Settings
 

@@ -13,7 +13,7 @@ Click the "toggle editing toolbar" button (added with [UI Tweaker](/plugins/ui-t
 - **Toolbar styles**: glass (blurred), default, tiny, or custom.
 - **Format painter** to copy formatting from one selection and apply to others.
 - **Text tools** submenu for advanced operations like deduplicating lines, adding prefixes, and converting between lists and tables.
-- **Fully customizable** — drag-and-drop to reorder items, add custom commands, or create submenus.
+- **Fully customizable**: drag-and-drop to reorder items, add custom commands, or create submenus.
 
 ### Toolbar Items
 

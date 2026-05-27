@@ -21,9 +21,9 @@ When focused, only the focused item, its children, and its ancestors are visible
 
 ### Features
 
-- **Right-click menu** — right-click any file or folder in the file explorer to quickly focus on it.
-- **File explorer icon button** — add a focus toggle button directly in the file explorer navigation bar.
-- **Hide ancestor folders** — option to hide parent folder indentation when focusing, making the focused folder appear at root level.
+- **Right-click menu**: right-click any file or folder in the file explorer to quickly focus on it.
+- **File explorer icon button**: add a focus toggle button directly in the file explorer navigation bar.
+- **Hide ancestor folders**: option to hide parent folder indentation when focusing, making the focused folder appear at root level.
 
 ### Commands
 
@@ -31,7 +31,7 @@ When focused, only the focused item, its children, and its ancestors are visible
 
 ### Settings
 
-- **Focus level** — choose the default focus mode (current file, parent, grandparent, great grandparent, or custom folder).
-- **Custom folder path** — specify a folder path for custom folder mode.
-- **Show right-click menu** — enable/disable the focus option in the file explorer context menu.
-- **Show file explorer icon** — add a focus toggle icon to the file explorer navigation bar.
+- **Focus level**: choose the default focus mode (current file, parent, grandparent, great grandparent, or custom folder).
+- **Custom folder path**: specify a folder path for custom folder mode.
+- **Show right-click menu**: enable/disable the focus option in the file explorer context menu.
+- **Show file explorer icon**: add a focus toggle icon to the file explorer navigation bar.

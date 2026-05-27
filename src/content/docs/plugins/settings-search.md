@@ -9,5 +9,5 @@ description: Global search for all settings in Obsidian.
 
 - **Fuzzy search** across all setting names and descriptions.
 - **Grouped results** organized by their parent settings tab.
-- **Direct navigation** — click a result to jump to the setting with a highlight animation.
+- **Direct navigation**: click a result to jump to the setting with a highlight animation.
 - **Keyboard navigation** with arrow keys or `CTRL + N` / `CTRL + P` to move between results.

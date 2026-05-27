@@ -1,9 +1,9 @@
 ---
 title: Frontmatter Properties
-description: YAML frontmatter fields — Obsidian calls them properties — that Vault CMS and Astro use for posts and pages.
+description: YAML frontmatter fields, Obsidian calls them properties, that Vault CMS and Astro use for posts and pages.
 ---
 
-Frontmatter properties are the YAML block at the top of each Markdown file, between `---` lines. Astro calls them **frontmatter**; Obsidian calls them **properties** — same thing. Astro and your theme read these values for title, dates, SEO, images, and drafts.
+Frontmatter properties are the YAML block at the top of each Markdown file, between `---` lines. Astro calls them **frontmatter**; Obsidian calls them **properties**: same thing. Astro and your theme read these values for title, dates, SEO, images, and drafts.
 
 ## Default template
 
@@ -40,7 +40,7 @@ Placeholders depend on your content type and Astro Composer settings.
 | `imageOG` | boolean | If `true`, use cover image for Open Graph / social previews. |
 | `hideCoverImage` | boolean | Hide cover on the page while still using it for OG/SEO if configured. |
 | `hideTOC` | boolean | Hide table of contents where the theme supports it. |
-| `targetKeyword` | string | Primary keyword for the [SEO](/plugins/seo/) plugin. |
+| `targetKeyword` | string | Primary keyword for the [Search Engine Optimization](/plugins/seo/) plugin. |
 | `draft` | boolean | `true` keeps content out of production builds when the theme respects it. |
 
 :::caution

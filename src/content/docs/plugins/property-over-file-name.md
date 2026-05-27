@@ -11,18 +11,18 @@ Using title properties is more helpful visually and semantically since note file
 
 ### Features
 
-- **Link suggester** — type `[[` to see suggestions based on the `title` property. The title is automatically set as the hyperlinked text.
-- **Quick switcher** — search notes by title with `CTRL + O`.
-- **Tab titles** — tabs display the note's `title` property instead of the file name.
-- **Graph view** — nodes display the title property.
-- **Backlinks** — backlinks panel shows title properties.
-- **Bookmarks** — bookmarks display title properties.
-- **Window frame** — browser title bar shows the title property.
-- **File explorer** — file explorer shows title properties.
-- **Drag-and-drop** — works when dragging notes from file explorer into a note.
-- **New note creation** — supports creating new notes via link suggester and quick switcher.
-- **Folder note support** — specify filename pattern for folder notes.
-- **MDX support** — optionally enable property display for `.mdx` files.
+- **Link suggester**: type `[[` to see suggestions based on the `title` property. The title is automatically set as the hyperlinked text.
+- **Quick switcher**: search notes by title with `CTRL + O`.
+- **Tab titles**: tabs display the note's `title` property instead of the file name.
+- **Graph view**: nodes display the title property.
+- **Backlinks**: backlinks panel shows title properties.
+- **Bookmarks**: bookmarks display title properties.
+- **Window frame**: browser title bar shows the title property.
+- **File explorer**: file explorer shows title properties.
+- **Drag-and-drop**: works when dragging notes from file explorer into a note.
+- **New note creation**: supports creating new notes via link suggester and quick switcher.
+- **Folder note support**: specify filename pattern for folder notes.
+- **MDX support**: optionally enable property display for `.mdx` files.
 
 ### Settings
 

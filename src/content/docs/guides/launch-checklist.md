@@ -45,7 +45,7 @@ Presets ship with opinionated defaults. Make it yours right away:
 
 - [ ] Set your content types (posts, pages)
 - [ ] Map your properties (title, date, description)
-- [ ] Choose your plugins (Bases CMS, Astro Composer, SEO, etc.)
+- [ ] Choose your plugins (Bases CMS, Astro Composer, Search Engine Optimization, etc.)
 
 ## Connect Git
 

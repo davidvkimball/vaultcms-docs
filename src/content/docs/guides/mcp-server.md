@@ -3,7 +3,7 @@ title: MCP server (AI agents)
 description: Install and configure Vault CMS from inside Claude Code, Cursor, Claude Desktop, and other AI agents that speak the Model Context Protocol.
 ---
 
-Vault CMS ships with a [Model Context Protocol](https://modelcontextprotocol.io) server bundled inside the same `create-vaultcms` npm package. Once registered, AI tools like Claude Code, Cursor, Claude Desktop, and Codex can install and configure Vault CMS for you through structured tool calls — no need to switch to a terminal or answer interactive prompts.
+Vault CMS ships with a [Model Context Protocol](https://modelcontextprotocol.io) server bundled inside the same `create-vaultcms` npm package. Once registered, AI tools like Claude Code, Cursor, Claude Desktop, and Codex can install and configure Vault CMS for you through structured tool calls, no need to switch to a terminal or answer interactive prompts.
 
 ## Why this matters
 
@@ -13,7 +13,7 @@ With MCP registered, the same conversation goes:
 
 > *"Set up Vault CMS in my Astro project at `~/code/my-blog` using the Starlight preset."*
 
-The agent inspects the project, confirms it's Astro, picks the right install location, runs the install, and reports what changed — all in one turn.
+The agent inspects the project, confirms it's Astro, picks the right install location, runs the install, and reports what changed, all in one turn.
 
 ## Quick start
 
@@ -41,7 +41,7 @@ Open **Settings → Cursor Settings → MCP → Add new MCP server**:
 
 ### Claude Desktop
 
-Edit `claude_desktop_config.json` (location varies by OS — see [the Claude Desktop docs](https://modelcontextprotocol.io/quickstart/user)):
+Edit `claude_desktop_config.json` (location varies by OS, see [the Claude Desktop docs](https://modelcontextprotocol.io/quickstart/user)):
 
 ```json
 {
@@ -78,7 +78,7 @@ Inspects a directory and returns a structured snapshot:
 - Content collections under `src/content/` (filtered to exclude Vault CMS install artifacts)
 - Dynamic Astro routes (`[...slug].astro`) mapped to their content collections
 - Whether Vault CMS is already installed
-- Whether any Obsidian vault is present (even without the vault-cms plugin — protects older Obsidian-authored sites from being overwritten)
+- Whether any Obsidian vault is present (even without the vault-cms plugin, protects older Obsidian-authored sites from being overwritten)
 
 The agent uses this to confirm the project state before doing anything.
 
@@ -95,7 +95,7 @@ Defaults to the official `davidvkimball/vaultcms-presets` registry. See [Custom 
 
 ### `install_vaultcms` (mutating)
 
-Runs the full install programmatically — equivalent to `npx create-vaultcms` minus the interactive prompts:
+Runs the full install programmatically, equivalent to `npx create-vaultcms` minus the interactive prompts:
 
 - Downloads the vault config (and optionally a preset zip)
 - Copies `_bases/` and `.obsidian/` into the target directory
@@ -105,7 +105,7 @@ Runs the full install programmatically — equivalent to `npx create-vaultcms` m
 
 Returns a structured result with `modifiedPaths`, `gitignore` action, and the captured installer log.
 
-The tool **refuses by default** if it detects an existing Obsidian vault without the vault-cms plugin — prevents an agent from silently clobbering an older Obsidian-authored setup. Pass `force: true` to override after the user explicitly confirms.
+The tool **refuses by default** if it detects an existing Obsidian vault without the vault-cms plugin, prevents an agent from silently clobbering an older Obsidian-authored setup. Pass `force: true` to override after the user explicitly confirms.
 
 ### What the server intentionally doesn't do
 
@@ -117,9 +117,9 @@ The tool **refuses by default** if it detects an existing Obsidian vault without
 
 Both `list_presets` and `install_vaultcms` default to `davidvkimball/vaultcms-presets`, but you can point them at a fork or a private team registry. Three converging override paths (priority order):
 
-1. **Per-call argument** — agent can pass `source` to `list_presets` or `presets_repo` to `install_vaultcms`
-2. **CLI flag** — `npx create-vaultcms --presets-repo owner/repo`
-3. **Environment variable** — `VAULTCMS_PRESETS_REPO=owner/repo`
+1. **Per-call argument**: agent can pass `source` to `list_presets` or `presets_repo` to `install_vaultcms`
+2. **CLI flag**: `npx create-vaultcms --presets-repo owner/repo`
+3. **Environment variable**: `VAULTCMS_PRESETS_REPO=owner/repo`
 
 Format is `owner/repo` or `owner/repo@branch`. Branch defaults to `master`. Examples:
 
@@ -127,7 +127,7 @@ Format is `owner/repo` or `owner/repo@branch`. Branch defaults to `master`. Exam
 # CLI
 npx create-vaultcms --presets-repo acme/vaultcms-presets
 
-# Env var (zero-config — once set, all flows pick it up)
+# Env var (zero-config, once set, all flows pick it up)
 export VAULTCMS_PRESETS_REPO=acme/vaultcms-presets
 npx create-vaultcms
 ```
@@ -145,7 +145,7 @@ npx create-vaultcms
 ```
 
 :::caution
-A custom registry runs code on your machine — `install_vaultcms` downloads a zip and extracts it into your project. Only use registries you trust.
+A custom registry runs code on your machine, `install_vaultcms` downloads a zip and extracts it into your project. Only use registries you trust.
 :::
 
 ## A typical agent flow
@@ -164,9 +164,9 @@ You typed two short messages. The agent handled the rest.
 
 ## Safety guards
 
-- **`install_vaultcms` is mutating** — confirm with the user before invoking. The tool description marks it as such, so well-behaved agents will ask first.
-- **Existing Obsidian vault protection** — install refuses by default if any `.obsidian/` directory exists in the project root, `src/content/`, or any first-level content collection without the vault-cms plugin. This catches older Obsidian-authored sites that predate the plugin and prevents silent overwrites of workspace, hotkeys, themes, and plugin lists.
-- **Custom registries warn the user** — both tool descriptions and the docs explicitly note that custom `presets_repo` values download and execute code from third-party repos.
+- **`install_vaultcms` is mutating**: confirm with the user before invoking. The tool description marks it as such, so well-behaved agents will ask first.
+- **Existing Obsidian vault protection**: install refuses by default if any `.obsidian/` directory exists in the project root, `src/content/`, or any first-level content collection without the vault-cms plugin. This catches older Obsidian-authored sites that predate the plugin and prevents silent overwrites of workspace, hotkeys, themes, and plugin lists.
+- **Custom registries warn the user**: both tool descriptions and the docs explicitly note that custom `presets_repo` values download and execute code from third-party repos.
 
 ## Verifying it works
 
@@ -185,6 +185,6 @@ Inside the AI tool itself, ask: *"Use the vaultcms MCP to detect the project at 
 ## Source and reporting issues
 
 - **npm package**: [`create-vaultcms`](https://www.npmjs.com/package/create-vaultcms)
-- **Source**: [github.com/davidvkimball/vaultcms](https://github.com/davidvkimball/vaultcms) — `src/mcp.js` and `src/lib/`
+- **Source**: [github.com/davidvkimball/vaultcms](https://github.com/davidvkimball/vaultcms), `src/mcp.js` and `src/lib/`
 - **Bundled spec**: [`MCP.md`](https://github.com/davidvkimball/vaultcms/blob/master/MCP.md) inside the package
 - **Issues**: [GitHub Issues](https://github.com/davidvkimball/vaultcms/issues)

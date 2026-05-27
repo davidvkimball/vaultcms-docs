@@ -27,7 +27,7 @@ The wizard walks you through 10 steps:
 2. **Project Detection**: Locates your Astro project by identifying config files (`astro.config.mjs`, etc.).
 3. **Content Types**: Scans your project to identify and categorize content folders (posts, pages, docs, etc.).
 4. **Properties**: Analyzes existing content to map properties (title, date, description, etc.).
-5. **Plugin Configuration**: Configures [Bases CMS](/plugins/bases-cms/), [Astro Composer](/plugins/astro-composer/), [SEO](/plugins/seo/), default content type, and editing toolbar preferences in one consolidated step.
+5. **Plugin Configuration**: Configures [Bases CMS](/plugins/bases-cms/), [Astro Composer](/plugins/astro-composer/), [Search Engine Optimization](/plugins/seo/), default content type, and editing toolbar preferences in one consolidated step.
 6. **Optional Plugins**: Enable or disable recommended ecosystem plugins.
 7. **Ignore Files**: Automatically optimizes `.gitignore` and Vite configurations for your project.
 8. **Git Integration**: Securely links your project to GitHub (PAT stored in Obsidian Secrets). Can initialize Git, create a repository, and perform the initial push.
