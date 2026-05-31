@@ -4,8 +4,8 @@
   status = 301
   force = true
 
-# Renamed page: /guides/frontmatter/ → /guides/frontmatter-properties/
-# (Astro calls them "frontmatter", Obsidian calls them "properties" — title is now the compromise.)
+# Renamed page: /guides/frontmatter/ -> /guides/frontmatter-properties/
+# (Astro calls them "frontmatter", Obsidian calls them "properties"; the title is the compromise.)
 [[redirects]]
   from = "/guides/frontmatter"
   to = "/guides/frontmatter-properties/"
@@ -14,4 +14,15 @@
 [[redirects]]
   from = "/guides/frontmatter/"
   to = "/guides/frontmatter-properties/"
+  status = 301
+
+# Settings Search plugin removed: Obsidian 1.13 ships a built-in global settings search.
+[[redirects]]
+  from = "/plugins/settings-search"
+  to = "/guides/introduction/"
+  status = 301
+
+[[redirects]]
+  from = "/plugins/settings-search/"
+  to = "/guides/introduction/"
   status = 301

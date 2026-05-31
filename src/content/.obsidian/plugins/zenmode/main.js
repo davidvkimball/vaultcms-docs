@@ -4,11 +4,9 @@ if you want to view the source, please visit the github repository of this plugi
 */
 
 "use strict";
-var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
-var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __export = (target, all) => {
   for (var name in all)
@@ -22,14 +20,6 @@ var __copyProps = (to, from, except, desc) => {
   }
   return to;
 };
-var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
-  // If the importer is in node compatibility mode or this is not an ESM
-  // file that has been converted to a CommonJS file using a Babel-
-  // compatible transform (i.e. "__esModule" has not been set), then set
-  // "default" to the CommonJS "module.exports" for node compatibility.
-  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
-  mod
-));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
 // src/main.ts
@@ -38,7 +28,7 @@ __export(main_exports, {
   default: () => ZenMode
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian3 = require("obsidian");
+var import_obsidian2 = require("obsidian");
 
 // src/settings.ts
 var DEFAULT_SETTINGS = {
@@ -59,42 +49,8 @@ var DEFAULT_SETTINGS = {
 };
 
 // src/settings-tab.ts
-var import_obsidian2 = require("obsidian");
-
-// src/utils/settings-compat.ts
 var import_obsidian = require("obsidian");
-var ObsidianModule = __toESM(require("obsidian"), 1);
-function createSettingsGroup(containerEl, heading, manifestId) {
-  if ((0, import_obsidian.requireApiVersion)("1.11.0")) {
-    const SettingGroupClass = ObsidianModule.SettingGroup;
-    if (SettingGroupClass) {
-      const group = heading ? new SettingGroupClass(containerEl).setHeading(heading) : new SettingGroupClass(containerEl);
-      return {
-        addSetting(cb) {
-          group.addSetting(cb);
-        }
-      };
-    }
-  }
-  if (manifestId) {
-    containerEl.addClass(`${manifestId}-settings-compat`);
-  }
-  {
-    if (heading) {
-      const headingEl = containerEl.createDiv("setting-group-heading");
-      headingEl.createEl("h3", { text: heading });
-    }
-    return {
-      addSetting(cb) {
-        const setting = new import_obsidian.Setting(containerEl);
-        cb(setting);
-      }
-    };
-  }
-}
-
-// src/settings-tab.ts
-var ZenModeSettingTab = class extends import_obsidian2.PluginSettingTab {
+var ZenModeSettingTab = class extends import_obsidian.PluginSettingTab {
   /**
    * Creates a new settings tab instance.
    * @param app - The Obsidian app instance
@@ -112,11 +68,7 @@ var ZenModeSettingTab = class extends import_obsidian2.PluginSettingTab {
   display() {
     const { containerEl } = this;
     containerEl.empty();
-    const generalGroup = createSettingsGroup(
-      containerEl,
-      void 0,
-      "zenmode"
-    );
+    const generalGroup = new import_obsidian.SettingGroup(containerEl);
     generalGroup.addSetting((setting) => {
       setting.setName("Full screen").setDesc(
         "Automatically enter fullscreen when enabling zen mode."
@@ -237,7 +189,7 @@ function setCssProps(element, props) {
 }
 
 // src/main.ts
-var ZenMode = class extends import_obsidian3.Plugin {
+var ZenMode = class extends import_obsidian2.Plugin {
   constructor() {
     super(...arguments);
     // Safe: always initialized in onload
@@ -442,7 +394,7 @@ var ZenMode = class extends import_obsidian3.Plugin {
   createButton() {
     this.buttonContainer = document.createElement("div");
     this.buttonContainer.classList.add("zenmode-button");
-    this.button = new import_obsidian3.ButtonComponent(this.buttonContainer);
+    this.button = new import_obsidian2.ButtonComponent(this.buttonContainer);
     this.button.setIcon("shrink");
     this.button.onClick(() => {
       void this.toggleZenMode();

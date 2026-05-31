@@ -3,7 +3,7 @@ title: Data Files Editor
 description: Edit data files like JSON, YAML, and more within Obsidian.
 ---
 
-[Data Files Editor](https://community.obsidian.md/plugins/data-files-editor) lets you create and edit non-Markdown file types directly within Obsidian. This is useful for managing configuration files, data files, and other assets in your Astro project without leaving the vault. Originally created by [ZukTol](https://github.com/ZukTol/obsidian-data-files-editor).
+[Data Files Editor](https://github.com/davidvkimball/obsidian-data-files-editor) lets you create and edit non-Markdown file types directly within Obsidian. This is useful for managing configuration files, data files, and other assets in your Astro project without leaving the vault. Originally created by [ZukTol](https://github.com/ZukTol/obsidian-data-files-editor); Vault CMS uses a [fork](https://github.com/davidvkimball/obsidian-data-files-editor) with additional changes that have not yet been merged upstream.
 
 ### Supported File Types
 
@@ -21,7 +21,7 @@ description: Edit data files like JSON, YAML, and more within Obsidian.
 
 ### Features
 
-- **Syntax highlighting** for JSON, YAML, and other supported formats.
+- **Syntax highlighting** for JSON and YAML (other file types open as plain text).
 - **Autosave** to automatically save your edits (enabled by default).
 - **Line wrapping** for long lines (enabled by default).
 - **Context menu integration** to quickly create new files of any enabled type from the file explorer.

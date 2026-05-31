@@ -80,7 +80,6 @@ It's an opinionated Obsidian vault, but allows for lots of customizability. Here
 - [Oxygen Settings](/plugins/oxygen-settings/)
 - [Property Over File Name](/plugins/property-over-file-name/)
 - [Search Engine Optimization](/plugins/seo/)
-- [Settings Search](/plugins/settings-search/)
 - [Tag Wrangler](/plugins/tag-wrangler/)
 - [UI Tweaker](/plugins/ui-tweaker/)
 - [Vault CMS (Plugin)](/plugins/vault-cms/)

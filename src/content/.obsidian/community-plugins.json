@@ -4,7 +4,6 @@
   "oxygen-settings",
   "vault-cms",
   "astro-composer",
-  "settings-search",
   "editing-toolbar",
   "image-manager",
   "bases-cms",
@@ -18,5 +17,6 @@
   "omnisearch",
   "file-name-history",
   "nested-properties",
-  "vault-nickname"
+  "vault-nickname",
+  "data-files-editor"
 ]

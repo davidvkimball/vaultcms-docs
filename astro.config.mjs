@@ -112,7 +112,6 @@ export default defineConfig({
 						{ label: 'Oxygen Settings', slug: 'plugins/oxygen-settings' },
 						{ label: 'Property Over File Name', slug: 'plugins/property-over-file-name' },
 						{ label: 'Search Engine Optimization', slug: 'plugins/seo' },
-						{ label: 'Settings Search', slug: 'plugins/settings-search' },
 						{ label: 'Tag Wrangler', slug: 'plugins/tag-wrangler' },
 						{ label: 'UI Tweaker', slug: 'plugins/ui-tweaker' },
 						{ label: 'Vault CMS (Plugin)', slug: 'plugins/vault-cms' },

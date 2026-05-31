@@ -44,6 +44,7 @@
   "swapMobileNewTabIcon": false,
   "hideMobileTitle": false,
   "hideMobileSyncIcon": true,
+  "hideStatusBarMobile": false,
   "navigateButtonPosition": "1",
   "navigationButtonPosition": "2",
   "quickSwitcherPosition": "3",
@@ -172,6 +173,13 @@
       "id": "external-toggle-focus",
       "name": "Toggle focus",
       "ariaLabel": "Toggle focus",
+      "type": "external",
+      "hidden": false
+    },
+    {
+      "id": "external-show-search-filter",
+      "name": "Show search filter",
+      "ariaLabel": "Show search filter",
       "type": "external",
       "hidden": false
     }

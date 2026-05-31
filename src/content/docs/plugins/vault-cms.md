@@ -6,7 +6,7 @@ description: The core companion plugin with setup wizard.
 [Vault CMS](https://github.com/davidvkimball/obsidian-vault-cms) is the core plugin that coordinates the experience. When you first open the vault, a setup wizard guides you through configuring Obsidian to work with your Astro project.
 
 :::note
-This plugin is currently in beta and installs via [BRAT](/plugins/brat/) rather than the official Obsidian community directory. It is the only Vault CMS companion plugin still on BRAT. Every other companion has migrated to the official directory.
+This plugin is currently in beta and installs via [BRAT](/plugins/brat/) rather than the official Obsidian community directory. Only this plugin and the [Data Files Editor](/plugins/data-files-editor/) fork install via BRAT; every other companion has migrated to the official directory.
 :::
 
 The wizard auto-detects your Astro project, lets you configure content types and properties, and sets up all the companion plugins. If something seems off during the process, ensure you have copied the vault folder to a location within your Astro project (usually `src/content`).

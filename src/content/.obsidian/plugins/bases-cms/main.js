@@ -129,7 +129,7 @@ __export(settings_schema_exports, {
   readCMSSettings: () => readCMSSettings
 });
 function readCMSSettings(config, pluginSettings) {
-  var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y;
+  var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z;
   const getConfig = (key) => {
     var _a2;
     return (_a2 = config == null ? void 0 : config.get) == null ? void 0 : _a2.call(config, key);
@@ -157,9 +157,10 @@ function readCMSSettings(config, pluginSettings) {
     showTextPreview: (_c = getConfig("showTextPreview")) != null ? _c : true,
     fallbackToContent: (_d = getConfig("fallbackToContent")) != null ? _d : true,
     richContentPreview: (_e = getConfig("richContentPreview")) != null ? _e : false,
-    truncatePreviewProperty: (_f = getConfig("truncatePreviewProperty")) != null ? _f : false,
-    descriptionMaxLength: (_g = getConfig("descriptionMaxLength")) != null ? _g : 500,
-    descriptionMaxLines: (_h = getConfig("descriptionMaxLines")) != null ? _h : 5,
+    richContentPreviewScroll: (_f = getConfig("richContentPreviewScroll")) != null ? _f : false,
+    truncatePreviewProperty: (_g = getConfig("truncatePreviewProperty")) != null ? _g : false,
+    descriptionMaxLength: (_h = getConfig("descriptionMaxLength")) != null ? _h : 500,
+    descriptionMaxLines: (_i = getConfig("descriptionMaxLines")) != null ? _i : 5,
     fallbackToEmbeds: (() => {
       const value = getConfig("fallbackToEmbeds");
       if (value === "always" || value === "if-empty" || value === "never") return value;
@@ -179,13 +180,13 @@ function readCMSSettings(config, pluginSettings) {
     propertyDisplay12: getProp("propertyDisplay12") || "",
     propertyDisplay13: getProp("propertyDisplay13") || "",
     propertyDisplay14: getProp("propertyDisplay14") || "",
-    propertyLayout12SideBySide: (_i = getConfig("propertyLayout12SideBySide")) != null ? _i : false,
-    propertyLayout34SideBySide: (_j = getConfig("propertyLayout34SideBySide")) != null ? _j : false,
-    propertyLayout56SideBySide: (_k = getConfig("propertyLayout56SideBySide")) != null ? _k : false,
-    propertyLayout78SideBySide: (_l = getConfig("propertyLayout78SideBySide")) != null ? _l : false,
-    propertyLayout910SideBySide: (_m = getConfig("propertyLayout910SideBySide")) != null ? _m : false,
-    propertyLayout1112SideBySide: (_n = getConfig("propertyLayout1112SideBySide")) != null ? _n : false,
-    propertyLayout1314SideBySide: (_o = getConfig("propertyLayout1314SideBySide")) != null ? _o : false,
+    propertyLayout12SideBySide: (_j = getConfig("propertyLayout12SideBySide")) != null ? _j : false,
+    propertyLayout34SideBySide: (_k = getConfig("propertyLayout34SideBySide")) != null ? _k : false,
+    propertyLayout56SideBySide: (_l = getConfig("propertyLayout56SideBySide")) != null ? _l : false,
+    propertyLayout78SideBySide: (_m = getConfig("propertyLayout78SideBySide")) != null ? _m : false,
+    propertyLayout910SideBySide: (_n = getConfig("propertyLayout910SideBySide")) != null ? _n : false,
+    propertyLayout1112SideBySide: (_o = getConfig("propertyLayout1112SideBySide")) != null ? _o : false,
+    propertyLayout1314SideBySide: (_p = getConfig("propertyLayout1314SideBySide")) != null ? _p : false,
     propertyGroup1Position: getConfig("propertyGroup1Position") || "bottom",
     propertyGroup2Position: getConfig("propertyGroup2Position") || "bottom",
     propertyGroup3Position: getConfig("propertyGroup3Position") || "bottom",
@@ -196,19 +197,19 @@ function readCMSSettings(config, pluginSettings) {
     imageFormat: getConfig("imageFormat") || "thumbnail",
     imagePosition: getConfig("imagePosition") || "right",
     propertyLabels: getConfig("propertyLabels") || "hide",
-    propertyDisplayMaxLength: (_p = getConfig("propertyDisplayMaxLength")) != null ? _p : 0,
-    showDraftStatus: (_q = getConfig("showDraftStatus")) != null ? _q : false,
+    propertyDisplayMaxLength: (_q = getConfig("propertyDisplayMaxLength")) != null ? _q : 0,
+    showDraftStatus: (_r = getConfig("showDraftStatus")) != null ? _r : false,
     draftStatusProperty: getProp("draftStatusProperty") || "",
-    draftStatusReverse: (_r = getConfig("draftStatusReverse")) != null ? _r : false,
-    draftStatusUseFilenamePrefix: (_s = getConfig("draftStatusUseFilenamePrefix")) != null ? _s : false,
-    showTags: (_t = getConfig("showTags")) != null ? _t : false,
+    draftStatusReverse: (_s = getConfig("draftStatusReverse")) != null ? _s : false,
+    draftStatusUseFilenamePrefix: (_t = getConfig("draftStatusUseFilenamePrefix")) != null ? _t : false,
+    showTags: (_u = getConfig("showTags")) != null ? _u : false,
     tagsProperty: getProp("tagsProperty") || "",
-    maxTagsToShow: (_u = getConfig("maxTagsToShow")) != null ? _u : 3,
-    customizeNewButton: (_v = getConfig("customizeNewButton")) != null ? _v : false,
+    maxTagsToShow: (_v = getConfig("maxTagsToShow")) != null ? _v : 3,
+    customizeNewButton: (_w = getConfig("customizeNewButton")) != null ? _w : false,
     newNoteLocation: getConfig("newNoteLocation") || "",
-    hideQuickEditIcon: (_w = getConfig("hideQuickEditIcon")) != null ? _w : false,
-    cardSize: (_x = getConfig("cardSize")) != null ? _x : 250,
-    imageAspectRatio: (_y = getConfig("imageAspectRatio")) != null ? _y : 0.55
+    hideQuickEditIcon: (_x = getConfig("hideQuickEditIcon")) != null ? _x : false,
+    cardSize: (_y = getConfig("cardSize")) != null ? _y : 250,
+    imageAspectRatio: (_z = getConfig("imageAspectRatio")) != null ? _z : 0.55
   };
 }
 function getPropItems(displayName, key) {
@@ -262,6 +263,7 @@ function getCMSViewOptions() {
         ...getPropItems("Text preview property", "descriptionProperty"),
         { type: "toggle", displayName: "Use note content if text preview property unavailable", key: "fallbackToContent", default: true },
         { type: "toggle", displayName: "Render preview as Markdown", key: "richContentPreview", default: false },
+        { type: "toggle", displayName: "Scroll Markdown preview when it overflows", key: "richContentPreviewScroll", default: false, showWhen: { key: "richContentPreview", value: true } },
         { type: "toggle", displayName: "Truncate preview property", key: "truncatePreviewProperty", default: false },
         { type: "slider", displayName: "Description max length (when truncation is on)", key: "descriptionMaxLength", min: 50, max: 2e3, step: 50, default: 500, showWhen: { key: "truncatePreviewProperty", value: true } },
         { type: "slider", displayName: "Description max lines", key: "descriptionMaxLines", min: 1, max: 20, step: 1, default: 5 }
@@ -989,6 +991,338 @@ var BasesCMSSettingTab = class extends import_obsidian3.PluginSettingTab {
     super(app, plugin);
     this.icon = "lucide-blocks";
     this.plugin = plugin;
+  }
+  // 1.13.0+: framework calls this and skips display().
+  // Pre-1.13.0: this method is not invoked; display() below runs as before.
+  // See https://docs.obsidian.md/plugins/guides/migrate-declarative-settings
+  getSettingDefinitions() {
+    return [
+      {
+        name: "Confirm bulk operations",
+        desc: "Show confirmation dialogs before performing bulk operations.",
+        control: { type: "toggle", key: "confirmBulkOperations" }
+      },
+      {
+        type: "group",
+        heading: "Toolbar buttons",
+        items: [
+          {
+            name: "Show select all button",
+            desc: "Display the select all button in the toolbar.",
+            // Render: changing this value has a side effect (toolbar refresh).
+            render: (setting) => {
+              setting.addToggle((toggle) => {
+                toggle.setValue(this.plugin.settings.showToolbarSelectAll);
+                toggle.onChange(async (value) => {
+                  this.plugin.settings.showToolbarSelectAll = value;
+                  await this.plugin.saveData(this.plugin.settings);
+                  this.refreshActiveToolbars();
+                });
+              });
+            }
+          },
+          {
+            name: "Show clear button",
+            desc: "Display the clear selection button in the toolbar.",
+            // Render: changing this value has a side effect (toolbar refresh).
+            render: (setting) => {
+              setting.addToggle((toggle) => {
+                toggle.setValue(this.plugin.settings.showToolbarClear);
+                toggle.onChange(async (value) => {
+                  this.plugin.settings.showToolbarClear = value;
+                  await this.plugin.saveData(this.plugin.settings);
+                  this.refreshActiveToolbars();
+                });
+              });
+            }
+          },
+          {
+            name: "Show publish button",
+            desc: "Display the publish button in the toolbar.",
+            // Render: changing this value has a side effect (toolbar refresh).
+            render: (setting) => {
+              setting.addToggle((toggle) => {
+                toggle.setValue(this.plugin.settings.showToolbarPublish);
+                toggle.onChange(async (value) => {
+                  this.plugin.settings.showToolbarPublish = value;
+                  await this.plugin.saveData(this.plugin.settings);
+                  this.refreshActiveToolbars();
+                });
+              });
+            }
+          },
+          {
+            name: "Show draft button",
+            desc: "Display the draft button in the toolbar.",
+            // Render: changing this value has a side effect (toolbar refresh).
+            render: (setting) => {
+              setting.addToggle((toggle) => {
+                toggle.setValue(this.plugin.settings.showToolbarDraft);
+                toggle.onChange(async (value) => {
+                  this.plugin.settings.showToolbarDraft = value;
+                  await this.plugin.saveData(this.plugin.settings);
+                  this.refreshActiveToolbars();
+                });
+              });
+            }
+          },
+          {
+            name: "Show tags button",
+            desc: "Display the tags button in the toolbar.",
+            // Render: changing this value has a side effect (toolbar refresh).
+            render: (setting) => {
+              setting.addToggle((toggle) => {
+                toggle.setValue(this.plugin.settings.showToolbarTags);
+                toggle.onChange(async (value) => {
+                  this.plugin.settings.showToolbarTags = value;
+                  await this.plugin.saveData(this.plugin.settings);
+                  this.refreshActiveToolbars();
+                });
+              });
+            }
+          },
+          {
+            name: "Show set button",
+            desc: "Display the set property button in the toolbar.",
+            // Render: changing this value has a side effect (toolbar refresh).
+            render: (setting) => {
+              setting.addToggle((toggle) => {
+                toggle.setValue(this.plugin.settings.showToolbarSet);
+                toggle.onChange(async (value) => {
+                  this.plugin.settings.showToolbarSet = value;
+                  await this.plugin.saveData(this.plugin.settings);
+                  this.refreshActiveToolbars();
+                });
+              });
+            }
+          },
+          {
+            name: "Show remove button",
+            desc: "Display the remove property button in the toolbar.",
+            // Render: changing this value has a side effect (toolbar refresh).
+            render: (setting) => {
+              setting.addToggle((toggle) => {
+                toggle.setValue(this.plugin.settings.showToolbarRemove);
+                toggle.onChange(async (value) => {
+                  this.plugin.settings.showToolbarRemove = value;
+                  await this.plugin.saveData(this.plugin.settings);
+                  this.refreshActiveToolbars();
+                });
+              });
+            }
+          },
+          {
+            name: "Show delete button",
+            desc: "Display the delete button in the toolbar.",
+            // Render: changing this value has a side effect (toolbar refresh).
+            render: (setting) => {
+              setting.addToggle((toggle) => {
+                toggle.setValue(this.plugin.settings.showToolbarDelete);
+                toggle.onChange(async (value) => {
+                  this.plugin.settings.showToolbarDelete = value;
+                  await this.plugin.saveData(this.plugin.settings);
+                  this.refreshActiveToolbars();
+                });
+              });
+            }
+          }
+        ]
+      },
+      {
+        type: "group",
+        heading: "Deletions",
+        items: [
+          {
+            name: "Delete parent folder for specific file name",
+            desc: "When enabled, deleting a note will delete its parent folder and all its contents if the note file name matches the specified name.",
+            control: { type: "toggle", key: "deleteParentFolder" }
+          },
+          {
+            name: "Folder deletion file name",
+            desc: "File name that triggers parent folder deletion.",
+            // Disabled until the parent folder deletion toggle above is enabled.
+            control: {
+              type: "text",
+              key: "deleteParentFolderFilename",
+              placeholder: "Index",
+              disabled: () => !this.plugin.settings.deleteParentFolder
+            }
+          },
+          {
+            name: "Delete associated unique attachments",
+            desc: "When deleting a note, automatically delete attachments that are only used by that note. Attachments used by other notes will be preserved.",
+            control: { type: "toggle", key: "deleteUniqueAttachments" }
+          },
+          {
+            name: "Confirm deletions",
+            desc: "Show confirmation dialog before deleting files.",
+            control: { type: "toggle", key: "confirmDeletions" }
+          }
+        ]
+      },
+      {
+        type: "group",
+        heading: "Appearance",
+        items: [
+          {
+            name: "Use home icon for the plugin view",
+            desc: "Use the home icon instead of blocks icon for the plugin view in the view selector. Restart Obsidian for this change to take effect.",
+            control: { type: "toggle", key: "useHomeIcon" }
+          },
+          {
+            name: "Force static image for animated gifs",
+            desc: "When enabled, animated gifs will display only the first frame when used as card covers or thumbnails.",
+            // Render: changing this value has a side effect (active views refresh).
+            render: (setting) => {
+              setting.addToggle((toggle) => {
+                toggle.setValue(this.plugin.settings.forceStaticGifImages);
+                toggle.onChange(async (value) => {
+                  this.plugin.settings.forceStaticGifImages = value;
+                  await this.plugin.saveData(this.plugin.settings);
+                  const pluginWithMethod = this.plugin;
+                  if (pluginWithMethod.activeViews) {
+                    pluginWithMethod.activeViews.forEach((view) => {
+                      if (view.onDataUpdated) {
+                        view.onDataUpdated();
+                      }
+                    });
+                  }
+                });
+              });
+            }
+          }
+        ]
+      },
+      {
+        type: "group",
+        heading: "Performance",
+        items: [
+          {
+            name: "Embedded view refresh debounce (ms)",
+            desc: "Delay in milliseconds before refreshing embedded views when switching files. Higher values reduce CPU usage but may make views feel less responsive. Range: 50-500ms.",
+            control: { type: "slider", key: "embeddedViewRefreshDebounceMs", min: 50, max: 500, step: 25 }
+          },
+          {
+            name: "Virtual scrolling threshold",
+            desc: "Number of cards above which virtual scrolling is enabled. Virtual scrolling only renders cards in the viewport, improving performance for large collections. Set to 0 to always enable, or a high value to disable.",
+            control: { type: "slider", key: "virtualScrollThreshold", min: 0, max: 500, step: 25 }
+          },
+          {
+            name: "Virtual scroll buffer",
+            desc: "Number of cards to render above and below the visible viewport when virtual scrolling is active. Higher values reduce visual glitches when scrolling fast but use more memory.",
+            control: { type: "slider", key: "virtualScrollBuffer", min: 5, max: 50, step: 5 }
+          }
+        ]
+      },
+      {
+        type: "group",
+        heading: "Quick edit",
+        items: [
+          {
+            name: "Enable quick edit",
+            desc: "Show an icon on card titles that launches a command when clicked.",
+            // Render: toggling this shows or hides the three rows below, so refresh the
+            // DOM state to re-evaluate their visible predicates. refreshDomState exists on
+            // Obsidian 1.13.0+, which is the only version that calls getSettingDefinitions.
+            render: (setting) => {
+              setting.addToggle((toggle) => toggle.setValue(this.plugin.settings.enableQuickEdit).onChange(async (value) => {
+                this.plugin.settings.enableQuickEdit = value;
+                await this.plugin.saveData(this.plugin.settings);
+                const refresh = this.refreshDomState;
+                if (refresh) refresh.call(this);
+              }));
+            }
+          },
+          {
+            name: "Quick edit command",
+            desc: "The command to execute when clicking the quick edit icon on a card title.",
+            // Shown only when quick edit is enabled.
+            visible: () => this.plugin.settings.enableQuickEdit,
+            // Render: opens a command picker modal and stores the selection (action, not a value bind).
+            render: (setting) => {
+              setting.addButton((button) => {
+                var _a;
+                const currentCommandName = this.plugin.settings.quickEditCommandName || (this.plugin.settings.quickEditCommand ? "Select command..." : "No command selected");
+                button.setButtonText(currentCommandName).onClick(() => {
+                  const modal = new CommandPickerModal(this.app, (commandId) => {
+                    void (async () => {
+                      const commandRegistry = this.app.commands;
+                      let commandName = "";
+                      if (commandRegistry) {
+                        if (typeof commandRegistry.listCommands === "function") {
+                          const commands = commandRegistry.listCommands();
+                          const command = commands.find((cmd) => cmd.id === commandId);
+                          if (command) {
+                            commandName = command.name;
+                          }
+                        }
+                        if (!commandName) {
+                          const registry = commandRegistry.commands;
+                          if (registry && registry[commandId]) {
+                            commandName = registry[commandId].name || "";
+                          }
+                        }
+                      }
+                      this.plugin.settings.quickEditCommand = commandId;
+                      this.plugin.settings.quickEditCommandName = commandName;
+                      await this.plugin.saveData(this.plugin.settings);
+                      const update = this.update;
+                      if (update) update.call(this);
+                    })();
+                  });
+                  modal.open();
+                });
+                if (this.plugin.settings.quickEditCommand) {
+                  const clearButton = (_a = button.buttonEl.parentElement) == null ? void 0 : _a.createEl("button", {
+                    text: "Clear",
+                    attr: { style: "margin-left: 8px;" }
+                  });
+                  clearButton == null ? void 0 : clearButton.addEventListener("click", () => {
+                    void (async () => {
+                      this.plugin.settings.quickEditCommand = "";
+                      this.plugin.settings.quickEditCommandName = "";
+                      await this.plugin.saveData(this.plugin.settings);
+                      const update = this.update;
+                      if (update) update.call(this);
+                    })();
+                  });
+                }
+              });
+            }
+          },
+          {
+            name: "Quick edit icon",
+            desc: "Select the icon to display for the quick edit button on card titles.",
+            // Shown only when quick edit is enabled.
+            visible: () => this.plugin.settings.enableQuickEdit,
+            // Render: opens an icon picker modal and stores the selection (action, not a value bind).
+            render: (setting) => {
+              setting.addButton((button) => {
+                const iconName = this.getIconName(this.plugin.settings.quickEditIcon || "pencil-line");
+                button.setButtonText(iconName || "Select icon...").onClick(() => {
+                  const modal = new IconPickerModal(this.app, (iconId) => {
+                    void (async () => {
+                      this.plugin.settings.quickEditIcon = iconId;
+                      await this.plugin.saveData(this.plugin.settings);
+                      const update = this.update;
+                      if (update) update.call(this);
+                    })();
+                  });
+                  modal.open();
+                });
+              });
+            }
+          },
+          {
+            name: "Attempt to open file and execute quick edit command",
+            desc: "For commands that don't have special handling, attempt to open the file and execute the command. Some commands may not work properly this way.",
+            // Shown only when quick edit is enabled.
+            visible: () => this.plugin.settings.enableQuickEdit,
+            control: { type: "toggle", key: "quickEditOpenFile" }
+          }
+        ]
+      }
+    ];
   }
   /**
    * Refresh toolbars in all active CMS views when settings change
@@ -3121,6 +3455,9 @@ var SharedCardRenderer = class {
     const isRichContent = settings.richContentPreview && card.snippetSource === "content";
     if (isRichContent) {
       el.addClass("card-text-preview-rich", "markdown-rendered");
+      if (settings.richContentPreviewScroll) {
+        el.addClass("card-text-preview-rich-scroll");
+      }
       const component = new import_obsidian11.Component();
       component.load();
       this.markdownComponents.push(component);
