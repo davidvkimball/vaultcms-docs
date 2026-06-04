@@ -76,6 +76,7 @@ It's an opinionated Obsidian vault, but allows for lots of customizability. Here
 - [Git](/plugins/git/)
 - [Home Base](/plugins/home-base/)
 - [Image Manager](/plugins/image-manager/)
+- [Link As](/plugins/link-as/)
 - [Omnisearch](/plugins/omnisearch/)
 - [Oxygen Settings](/plugins/oxygen-settings/)
 - [Property Over File Name](/plugins/property-over-file-name/)

@@ -107,6 +107,7 @@ export default defineConfig({
 						{ label: 'Git', slug: 'plugins/git' },
 						{ label: 'Home Base', slug: 'plugins/home-base' },
 						{ label: 'Image Manager', slug: 'plugins/image-manager' },
+						{ label: 'Link As', slug: 'plugins/link-as' },
 						{ label: 'Nested Properties', slug: 'plugins/nested-properties' },
 						{ label: 'Omnisearch', slug: 'plugins/omnisearch' },
 						{ label: 'Oxygen Settings', slug: 'plugins/oxygen-settings' },
