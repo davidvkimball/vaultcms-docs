@@ -1,6 +1,8 @@
 ---
 title: MCP server (AI agents)
 description: Install and configure Vault CMS from inside Claude Code, Cursor, Claude Desktop, and other AI agents that speak the Model Context Protocol.
+sidebar:
+  order: 4
 ---
 
 Vault CMS ships with a [Model Context Protocol](https://modelcontextprotocol.io) server bundled inside the same `create-vaultcms` npm package. Once registered, AI tools like Claude Code, Cursor, Claude Desktop, and Codex can install and configure Vault CMS for you through structured tool calls, no need to switch to a terminal or answer interactive prompts.

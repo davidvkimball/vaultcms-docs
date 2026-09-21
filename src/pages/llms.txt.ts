@@ -37,7 +37,7 @@ export async function GET() {
 	lines.push(`> ${SITE_SUMMARY}`);
 	lines.push('');
 	lines.push(
-		`Every documentation page is also available as raw Markdown by appending \`.md\` to its URL (e.g. ${SITE_URL}/guides/introduction.md). A complete corpus is available at ${SITE_URL}/llms-full.txt.`
+		`Every documentation page is also available as raw Markdown by appending \`.md\` to its URL (e.g. ${SITE_URL}/get-started/introduction.md). A complete corpus is available at ${SITE_URL}/llms-full.txt.`
 	);
 	lines.push('');
 

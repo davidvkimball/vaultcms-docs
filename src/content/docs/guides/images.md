@@ -1,6 +1,8 @@
 ---
 title: Images in content
 description: Insert and manage images with Image Manager and frontmatter.
+sidebar:
+  order: 3
 ---
 
 [Image Manager](/plugins/image-manager/) speeds up inserting images and managing attachments without leaving Obsidian.

@@ -1,6 +1,8 @@
 ---
 title: Mobile Guide
 description: Using Vault CMS on mobile devices.
+sidebar:
+  order: 5
 ---
 
 ## Disabling the Git Plugin

@@ -1,6 +1,8 @@
 ---
 title: Axis
 description: A premium Astro theme for personal publishing, built for Vault CMS with a dedicated Obsidian settings plugin.
+sidebar:
+  order: 2
 ---
 
 

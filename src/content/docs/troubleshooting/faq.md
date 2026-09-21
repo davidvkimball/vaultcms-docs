@@ -1,11 +1,13 @@
 ---
 title: FAQ
 description: Common questions about Vault CMS, Obsidian, and the Astro workflow.
+sidebar:
+  order: 1
 ---
 
 ### Does Vault CMS work with any Astro theme?
 
-Yes. Vault CMS is headless: it manages Markdown in your content folder and does not change theme templates. For **Starlight**, **Chiri**, **Slate**, and others, use a [preset](/guides/presets/) when the installer asks, or pass `--template`.
+Yes. Vault CMS is headless: it manages Markdown in your content folder and does not change theme templates. For **Starlight**, **Chiri**, **Slate**, and others, use a [preset](/get-started/presets/) when the installer asks, or pass `--template`.
 
 ### Do I need Obsidian?
 
@@ -53,4 +55,4 @@ You can edit locally without Git, but one-click publish from Obsidian expects a 
 
 - [Discord](https://discord.gg/gyrNHAwHK8)  
 - [GitHub Issues](https://github.com/davidvkimball/vaultcms/issues)  
-- [Common issues](/guides/troubleshooting-common-issues/)
+- [Common issues](/troubleshooting/common-issues/)

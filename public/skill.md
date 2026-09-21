@@ -39,16 +39,16 @@ Use this skill when a user asks for help with any of:
 
 | Task | Page |
 |---|---|
-| Install | https://docs.vaultcms.org/guides/installation/ |
-| Apply a preset | https://docs.vaultcms.org/guides/presets/ |
+| Install | https://docs.vaultcms.org/get-started/installation/ |
+| Apply a preset | https://docs.vaultcms.org/get-started/presets/ |
 | Configure frontmatter properties | https://docs.vaultcms.org/guides/frontmatter-properties/ |
 | Publishing flow | https://docs.vaultcms.org/concepts/publishing/ |
 | Theme compatibility | https://docs.vaultcms.org/themes/comparison/ |
 | Mobile setup | https://docs.vaultcms.org/guides/mobile-guide/ |
-| Troubleshooting | https://docs.vaultcms.org/guides/troubleshooting-common-issues/ |
-| FAQ | https://docs.vaultcms.org/guides/troubleshooting-faq/ |
+| Troubleshooting | https://docs.vaultcms.org/troubleshooting/common-issues/ |
+| FAQ | https://docs.vaultcms.org/troubleshooting/faq/ |
 
-For a complete index see [llms.txt](https://docs.vaultcms.org/llms.txt). For the full content corpus see [llms-full.txt](https://docs.vaultcms.org/llms-full.txt). Every documentation URL also returns Markdown when `.md` is appended (e.g. `https://docs.vaultcms.org/guides/introduction.md`).
+For a complete index see [llms.txt](https://docs.vaultcms.org/llms.txt). For the full content corpus see [llms-full.txt](https://docs.vaultcms.org/llms-full.txt). Every documentation URL also returns Markdown when `.md` is appended (e.g. `https://docs.vaultcms.org/get-started/introduction.md`).
 
 ## Useful commands
 

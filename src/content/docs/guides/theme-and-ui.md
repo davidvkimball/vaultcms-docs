@@ -1,6 +1,8 @@
 ---
 title: Theme & UI
 description: The visual identity of Vault CMS powered by Oxygen.
+sidebar:
+  order: 6
 ---
 
 ## Oxygen Theme

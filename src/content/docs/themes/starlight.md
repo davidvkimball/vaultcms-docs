@@ -1,6 +1,8 @@
 ---
 title: Starlight
 description: Astro's official documentation theme. Vault CMS adds Obsidian-powered content management to Starlight docs sites.
+sidebar:
+  order: 7
 ---
 
 

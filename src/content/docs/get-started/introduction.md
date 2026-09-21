@@ -1,15 +1,17 @@
 ---
 title: Introduction
 description: Overview, philosophy, and default settings for Vault CMS.
+sidebar:
+  order: 1
 ---
 
 ## What is Vault CMS?
 
 Vault CMS lets you use [Obsidian](https://obsidian.md) as a content management system for your [Astro](https://astro.build) site. Content stays in plain Markdown in your repo, no separate CMS server. You get preconfigured settings, plugins, and a setup wizard.
 
-**Learn the flow:** [How it works](/concepts/how-it-works/) · [Installation](/guides/installation/) · [Publishing](/concepts/publishing/)
+**Learn the flow:** [How it works](/concepts/how-it-works/) · [Installation](/get-started/installation/) · [Publishing](/concepts/publishing/)
 
-**Using an AI agent?** Vault CMS ships an [MCP server](/guides/mcp-server/) so Claude Code, Cursor, Claude Desktop, and other agents can install and configure it for you with a single sentence.
+**Using an AI agent?** Vault CMS ships an [MCP server](/get-started/mcp-server/) so Claude Code, Cursor, Claude Desktop, and other agents can install and configure it for you with a single sentence.
 
 **Community:** [Discord](https://discord.gg/gyrNHAwHK8)
 

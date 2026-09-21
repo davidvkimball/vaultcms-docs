@@ -1,6 +1,8 @@
 ---
 title: Presets
 description: Install Vault CMS pre-tuned for Starlight, Chiri, Slate, and other Astro themes.
+sidebar:
+  order: 3
 ---
 
 Presets bundle Vault CMS settings for specific Astro themes so paths, content types, and plugin config match the theme without manual tuning.
@@ -47,4 +49,4 @@ Typical behavior (exact steps depend on the preset):
 ## More
 
 - Preset source: [github.com/davidvkimball/vaultcms-presets](https://github.com/davidvkimball/vaultcms-presets)  
-- General install steps: [Installation](/guides/installation/)  
+- General install steps: [Installation](/get-started/installation/)  

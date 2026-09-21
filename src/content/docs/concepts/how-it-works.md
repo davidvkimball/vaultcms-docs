@@ -1,6 +1,8 @@
 ---
 title: How it works
 description: How Obsidian, the vault, and Git connect to your Astro site.
+sidebar:
+  order: 1
 ---
 
 Vault CMS is a headless setup built on [Obsidian](https://obsidian.md) for writing and [Git](https://git-scm.com) for publishing. Your content is plain Markdown inside your Astro project. There is no database and no hosted Vault CMS backend, only files.

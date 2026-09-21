@@ -1,6 +1,8 @@
 ---
 title: Launch Checklist
 description: Every step from Obsidian vault to live website. A universal reference for any theme.
+sidebar:
+  order: 8
 ---
 
 A step-by-step reference for going from an empty folder to a live website powered by your Obsidian vault. This checklist works with any Vault CMS-compatible theme.

@@ -1,12 +1,14 @@
 ---
 title: Installation
 description: CLI quick start, presets, manual install, and what the installer changes on disk.
+sidebar:
+  order: 2
 ---
 
 Vault CMS installs into your Astro **content** directory by default (usually `src/content`); installing at the **project root** is also supported.
 
 :::tip
-Using Claude Code, Cursor, or Claude Desktop? Skip the CLI and let your AI agent handle the install, see the [MCP server guide](/guides/mcp-server/).
+Using Claude Code, Cursor, or Claude Desktop? Skip the CLI and let your AI agent handle the install, see the [MCP server guide](/get-started/mcp-server/).
 :::
 
 ## Prerequisites
@@ -27,7 +29,7 @@ npx create-vaultcms
 
 1. The CLI detects your Astro project and may list content collections.
 2. Choose the install location, **default `src/content`**, or `.` for the project root.
-3. Optional: choose a [preset](/guides/presets/) for your theme (`--template` or the interactive prompt).
+3. Optional: choose a [preset](/get-started/presets/) for your theme (`--template` or the interactive prompt).
 4. When asked, open Obsidian and **Open folder as vault** on the directory that was just populated.
 5. Complete the setup wizard (**Vault CMS: Open Wizard**) if it does not open automatically.
 
@@ -45,7 +47,7 @@ npx create-vaultcms
 npx create-vaultcms --template starlight
 ```
 
-Other package managers and template names work the same way. See [Presets](/guides/presets/) for positional `npx create-vaultcms starlight` and the full preset list on GitHub.
+Other package managers and template names work the same way. See [Presets](/get-started/presets/) for positional `npx create-vaultcms starlight` and the full preset list on GitHub.
 
 ## Manual installation
 
@@ -89,4 +91,4 @@ Copy-Item -Force .\vaultcms\_GUIDE.md .\your-project\src\content\
 
 ## Problems?
 
-See [Common issues](/guides/troubleshooting-common-issues/) and [FAQ](/guides/troubleshooting-faq/).
+See [Common issues](/troubleshooting/common-issues/) and [FAQ](/troubleshooting/faq/).

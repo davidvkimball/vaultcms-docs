@@ -1,6 +1,8 @@
 ---
 title: Publishing
 description: Draft workflow, Git push, and how content reaches your live Astro site.
+sidebar:
+  order: 3
 ---
 
 **Publishing** in Vault CMS means committing Markdown and pushing to Git. Your host rebuilds the site; Vault CMS does not host anything itself.
@@ -63,4 +65,4 @@ Connect that repository in Netlify, Vercel, or another host so pushes trigger de
 ## Tips
 
 - Small, frequent commits are easier to review and revert.
-- The CLI adds workspace files to `.gitignore` so personal Obsidian UI state is not committed. See [Installation](/guides/installation/) for the exact entries.
+- The CLI adds workspace files to `.gitignore` so personal Obsidian UI state is not committed. See [Installation](/get-started/installation/) for the exact entries.

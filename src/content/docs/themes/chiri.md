@@ -1,6 +1,8 @@
 ---
 title: Chiri
 description: A minimal, free Astro blog theme. Great for beginners getting started with Vault CMS.
+sidebar:
+  order: 5
 ---
 
 

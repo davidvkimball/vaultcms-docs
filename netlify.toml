@@ -3,7 +3,7 @@
 
 [[redirects]]
   from = "/"
-  to = "/guides/introduction/"
+  to = "/get-started/introduction/"
   status = 301
   force = true
 
@@ -22,10 +22,73 @@
 # Settings Search plugin removed: Obsidian 1.13 ships a built-in global settings search.
 [[redirects]]
   from = "/plugins/settings-search"
-  to = "/guides/introduction/"
+  to = "/get-started/introduction/"
   status = 301
 
 [[redirects]]
   from = "/plugins/settings-search/"
-  to = "/guides/introduction/"
+  to = "/get-started/introduction/"
+  status = 301
+
+# The docs were reorganized so every sidebar group maps to a real folder.
+# "Get started" and "Troubleshooting" used to live inside /guides/.
+
+[[redirects]]
+  from = "/guides/introduction"
+  to = "/get-started/introduction/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/introduction/"
+  to = "/get-started/introduction/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/installation"
+  to = "/get-started/installation/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/installation/"
+  to = "/get-started/installation/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/presets"
+  to = "/get-started/presets/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/presets/"
+  to = "/get-started/presets/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/mcp-server"
+  to = "/get-started/mcp-server/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/mcp-server/"
+  to = "/get-started/mcp-server/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/troubleshooting-common-issues"
+  to = "/troubleshooting/common-issues/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/troubleshooting-common-issues/"
+  to = "/troubleshooting/common-issues/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/troubleshooting-faq"
+  to = "/troubleshooting/faq/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/troubleshooting-faq/"
+  to = "/troubleshooting/faq/"
   status = 301

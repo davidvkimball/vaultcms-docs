@@ -1,6 +1,8 @@
 ---
 title: Fuwari
 description: A free, feature-rich Astro blog theme with page transitions, search, and categories.
+sidebar:
+  order: 4
 ---
 
 

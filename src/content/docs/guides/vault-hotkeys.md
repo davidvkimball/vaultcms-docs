@@ -1,6 +1,8 @@
 ---
 title: Vault Hotkeys
 description: A guide to the default hotkeys in Vault CMS.
+sidebar:
+  order: 7
 ---
 
 Here's a guide for some important hotkeys set especially for this theme:

@@ -1,6 +1,8 @@
 ---
 title: Theme Comparison
 description: Feature comparison of Astro themes that work with Vault CMS.
+sidebar:
+  order: 1
 ---
 
 Vault CMS works with most Astro themes. Some themes have dedicated presets and deeper integration. Here's a comparison of the themes featured in our documentation and course.

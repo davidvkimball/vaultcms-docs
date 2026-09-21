@@ -1,6 +1,8 @@
 ---
 title: Writing content
 description: Create and edit posts in Obsidian with Vault CMS defaults.
+sidebar:
+  order: 1
 ---
 
 Vault CMS uses Obsidian as the editor: new notes, formatting, tags, and focus modes are available from the keyboard and toolbar. See [Vault hotkeys](/guides/vault-hotkeys/) for the full list.

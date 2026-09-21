@@ -1,6 +1,8 @@
 ---
 title: SEO for content
 description: Use the SEO plugin and frontmatter to improve search visibility.
+sidebar:
+  order: 4
 ---
 
 The [Search Engine Optimization](/plugins/seo/) plugin analyzes the open note: title, description, keyword usage, headings, and length. Open the panel with `Ctrl/Cmd + Shift + A`.

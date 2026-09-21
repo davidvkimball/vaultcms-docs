@@ -1,6 +1,8 @@
 ---
 title: Content types
 description: How Vault CMS maps folders and routes to Astro content collections and URLs.
+sidebar:
+  order: 2
 ---
 
 A **content type** in Vault CMS lines up with an [Astro content collection](https://docs.astro.build/en/guides/content-collections/), a folder under `src/content` where your Markdown lives. Each type has its own folder, frontmatter template, and URL pattern on the site.

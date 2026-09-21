@@ -1,6 +1,8 @@
 ---
 title: Slate
 description: A clean, free Astro blog theme with tags, search, and dark mode.
+sidebar:
+  order: 6
 ---
 
 

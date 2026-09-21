@@ -1,6 +1,8 @@
 ---
 title: Frontmatter Properties
 description: YAML frontmatter fields, Obsidian calls them properties, that Vault CMS and Astro use for posts and pages.
+sidebar:
+  order: 2
 ---
 
 Frontmatter properties are the YAML block at the top of each Markdown file, between `---` lines. Astro calls them **frontmatter**; Obsidian calls them **properties**: same thing. Astro and your theme read these values for title, dates, SEO, images, and drafts.

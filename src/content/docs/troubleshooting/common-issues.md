@@ -1,6 +1,8 @@
 ---
 title: Common issues
 description: Fixes for typical installation and day-to-day problems with Vault CMS.
+sidebar:
+  order: 2
 ---
 
 ### Installation: "No Astro project found"
@@ -37,7 +39,7 @@ The Vault CMS vault lives inside a dotfolder (`src/content/.obsidian/`). GitHub'
 - Run `npx create-vaultcms` in your project. The installer copies dotfolders correctly by design.
 - Or `git clone` the theme repository rather than using the template button, then remove `.git` and start your own history.
 
-Both approaches bring the vault across intact. See [Installation](/guides/installation/) for the full steps.
+Both approaches bring the vault across intact. See [Installation](/get-started/installation/) for the full steps.
 
 ### Wiki links appear in Astro output
 
@@ -56,5 +58,5 @@ Copy **both** `.obsidian/` and `_bases/`, and `_GUIDE.md` if you want the in-vau
 **Settings → Community plugins → Turn on community plugins**, then enable each needed plugin (Vault CMS, Astro Composer, Git, etc.).
 
 :::tip
-Still stuck? [Discord](https://discord.gg/gyrNHAwHK8) · [GitHub Issues](https://github.com/davidvkimball/vaultcms/issues) · [FAQ](/guides/troubleshooting-faq/)
+Still stuck? [Discord](https://discord.gg/gyrNHAwHK8) · [GitHub Issues](https://github.com/davidvkimball/vaultcms/issues) · [FAQ](/troubleshooting/faq/)
 :::

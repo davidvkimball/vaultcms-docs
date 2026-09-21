@@ -1,6 +1,8 @@
 ---
 title: Astro Modular
 description: A free, open-source Astro blog theme designed for Obsidian users, with a dedicated settings plugin and full Vault CMS integration.
+sidebar:
+  order: 3
 ---
 
 
