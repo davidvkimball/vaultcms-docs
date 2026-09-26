@@ -1,17 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
 /* 
    FONT CUSTOMIZATION
 */
 
 :root {
-    --sl-font: "DM Sans", system-ui, sans-serif;
+    /* Defined by the Astro Fonts API (see `fonts` in astro.config.mjs). */
+    --sl-font: var(--font-dm-sans), system-ui, sans-serif;
     --sl-font-mono: "Consolas", "Monaco", "Menlo", "Andale Mono", "Ubuntu Mono", monospace;
 
-    /* Brand colors (shared) */
+    /* Brand colors (dark mode, and the default before a theme is set) */
     --sl-color-accent-low: hsl(310, 80%, 20%);
     --sl-color-accent: hsl(310, 80%, 65%);
     --sl-color-accent-high: hsl(310, 80%, 85%);
+}
+
+/*
+   Light mode needs its own accent shades. Starlight's light-mode accents live
+   in a cascade layer, so the unlayered :root values above used to win in both
+   themes and light-mode text accents came out at about 2.7:1. Starlight uses
+   --sl-color-accent for link text in light mode and swaps high/low (high is
+   the dark shade), so these are picked to clear 4.5:1 against the light page
+   and sidebar backgrounds and for white text on an accent background.
+*/
+:root[data-theme='light'] {
+    --sl-color-accent-low: hsl(310, 80%, 92%);
+    --sl-color-accent: hsl(310, 80%, 40%);
+    --sl-color-accent-high: hsl(310, 80%, 25%);
 }
 
 /* Dark theme colors */

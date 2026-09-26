@@ -12,7 +12,7 @@ const SECTION_LABELS: Record<string, string> = {
 	plugins: 'Plugins',
 };
 
-// Curated section ordering — keep aligned with the sidebar in astro.config.mjs.
+// Curated section ordering. Keep aligned with the sidebar in astro.config.mjs.
 const SECTION_ORDER = ['guides', 'concepts', 'themes', 'plugins'];
 
 export async function GET() {

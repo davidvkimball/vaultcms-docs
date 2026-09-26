@@ -1,6 +1,6 @@
 ---
 name: vaultcms
-description: Operating guidance for AI agents helping users install, configure, and publish content with Vault CMS — an Obsidian-native headless CMS for Astro sites.
+description: Operating guidance for AI agents helping users install, configure, and publish content with Vault CMS, an Obsidian-native headless CMS for Astro sites.
 version: 1
 homepage: https://vaultcms.org
 documentation: https://docs.vaultcms.org
@@ -10,7 +10,7 @@ llms_full: https://docs.vaultcms.org/llms-full.txt
 
 # Vault CMS Skill
 
-Vault CMS turns [Obsidian](https://obsidian.md) into a CMS for [Astro](https://astro.build) sites. Content is plain Markdown in the user's Astro repo. There is no backend service — installation places an Obsidian vault configuration (`.obsidian/`), bases (`_bases/`), and a guide file inside the user's existing Astro project. The user writes in Obsidian, commits via the bundled Git plugin, and Astro builds the site.
+Vault CMS turns [Obsidian](https://obsidian.md) into a CMS for [Astro](https://astro.build) sites. Content is plain Markdown in the user's Astro repo. There is no backend service. Installation places an Obsidian vault configuration (`.obsidian/`), bases (`_bases/`), and a guide file inside the user's existing Astro project. The user writes in Obsidian, commits via the bundled Git plugin, and Astro builds the site.
 
 ## When to use this skill
 
@@ -35,7 +35,7 @@ Use this skill when a user asks for help with any of:
 
 5. **Publishing.** The Git plugin's "Push" command (or the up-arrow in the status bar) commits and pushes. Astro hosting (Netlify, Vercel, Cloudflare Pages) rebuilds on push.
 
-## Common tasks — entrypoints in the docs
+## Common tasks and their entrypoints in the docs
 
 | Task | Page |
 |---|---|
@@ -52,11 +52,11 @@ For a complete index see [llms.txt](https://docs.vaultcms.org/llms.txt). For the
 
 ## Useful commands
 
-- `npx create-vaultcms` — interactive install
-- `npx create-vaultcms --template <preset>` — non-interactive install with a named preset
-- `Ctrl/Cmd + P → Vault CMS: Open Wizard` — re-run the setup wizard
-- `Ctrl/Cmd + P → Astro Composer: Standardize Properties` — normalize frontmatter across content
-- `Ctrl/Cmd + P → Astro Composer: Convert Wikilinks to Astro` — rewrite `[[wikilinks]]` to Markdown links Astro can resolve
+- `npx create-vaultcms`: interactive install
+- `npx create-vaultcms --template <preset>`: non-interactive install with a named preset
+- `Ctrl/Cmd + P → Vault CMS: Open Wizard`: re-run the setup wizard
+- `Ctrl/Cmd + P → Astro Composer: Standardize Properties`: normalize frontmatter across content
+- `Ctrl/Cmd + P → Astro Composer: Convert Wikilinks to Astro`: rewrite `[[wikilinks]]` to Markdown links Astro can resolve
 
 ## What this skill does NOT cover
 

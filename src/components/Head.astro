@@ -1,0 +1,8 @@
+---
+import Default from '@astrojs/starlight/components/Head.astro';
+import { Font } from 'astro:assets';
+---
+
+<Default><slot /></Default>
+{/* Preload only the upright file; italics are rare enough to load on demand. */}
+<Font cssVariable="--font-dm-sans" preload={[{ style: "normal" }]} />
