@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig, fontProviders } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import rehypeExternalLinks from 'rehype-external-links';
 
@@ -8,9 +8,27 @@ export default defineConfig({
 	site: 'https://docs.vaultcms.org',
 	markdown: {
 		rehypePlugins: [
-			[rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }],
+			// House style: external links open in a new tab with no rel attribute.
+			// rehype-external-links defaults rel to nofollow when it is omitted, so
+			// the empty array is what keeps it off.
+			[rehypeExternalLinks, { target: '_blank', rel: [] }],
 		],
 	},
+	// DM Sans is downloaded at build time and served from the site itself,
+	// rather than @imported from Google Fonts on every page view. Body text is
+	// the only place it is used (headings and code are monospace), so only the
+	// weights Starlight's body styles reach are requested.
+	fonts: [
+		{
+			provider: fontProviders.google(),
+			name: 'DM Sans',
+			cssVariable: '--font-dm-sans',
+			weights: [400, 600, 700],
+			styles: ['normal', 'italic'],
+			subsets: ['latin'],
+			fallbacks: ['system-ui', 'sans-serif'],
+		},
+	],
 	integrations: [
 		starlight({
 			title: 'Vault CMS',
@@ -19,6 +37,8 @@ export default defineConfig({
 				// <main>, immediately before the page H1, so the converted content
 				// has it within the first ~50% of the document.
 				PageTitle: './src/components/PageTitle.astro',
+				// Adds the self-hosted DM Sans @font-face rules and preload link.
+				Head: './src/components/Head.astro',
 			},
 			head: [
 				{

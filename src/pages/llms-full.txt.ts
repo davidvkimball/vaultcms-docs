@@ -20,7 +20,7 @@ export async function GET() {
 	});
 
 	const parts: string[] = [];
-	parts.push(`# ${SITE_TITLE} — full documentation corpus`);
+	parts.push(`# ${SITE_TITLE}: full documentation corpus`);
 	parts.push('');
 	parts.push(
 		`Every page below is sourced from ${SITE_URL}. Pages are separated by \`---\` and prefixed with their canonical URL.`

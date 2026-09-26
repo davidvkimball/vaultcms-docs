@@ -35,7 +35,7 @@ export default async (request: Request, context: Context) => {
 	const stripped = pathname.replace(/\/$/, '');
 	const target = `${stripped}.md${url.search}`;
 
-	// Internal rewrite (200 with the markdown body) rather than redirect —
+	// Internal rewrite (200 with the markdown body) rather than redirect:
 	// keeps the URL stable for the agent and avoids extra round trips.
 	return context.rewrite(target);
 };
