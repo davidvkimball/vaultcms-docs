@@ -13,6 +13,8 @@ Yes. Vault CMS is headless: it manages Markdown in your content folder and does 
 
 Yes. Vault CMS is a preconfigured Obsidian vault plus plugins. Download Obsidian at [obsidian.md](https://obsidian.md).
 
+If you'd rather not use Obsidian, [Zeku](https://zeku.dev) is a standalone desktop app from the same developer. It opens your Astro project directly and edits the same Markdown files. It never touches the `.obsidian` folder, so you can switch between the two or use both on one project.
+
 ### Is Vault CMS free?
 
 Yes. Vault CMS is open source (MIT). Some bundled plugins from the same author offer optional [Patreon](https://patreon.com/davidvkimball) support.
