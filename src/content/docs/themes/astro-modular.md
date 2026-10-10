@@ -46,10 +46,14 @@ sidebar:
 
 ## Getting Started
 
-1. Clone or download the [Astro Modular repo](https://github.com/davidvkimball/astro-modular)
-2. Open the `src/content` folder as a vault in Obsidian
-3. Vault CMS and the settings plugin are already bundled
-4. Start writing
+Vault CMS and the Astro Modular Settings plugin are already bundled, so don't run the [Vault CMS installer](/get-started/installation/) on this theme. Node.js is optional: your host builds the site, so you only need Node to preview locally or to use the command-line install.
+
+1. Get the code:
+   - **Without the command line:** open the [latest release](https://github.com/davidvkimball/astro-modular/releases/latest), download **Source code (zip)** under **Assets**, and extract it.
+   - **With the command line:** run `pnpm create astro-modular my-blog`.
+2. In Obsidian, select **Open folder as vault** and choose the project's `src/content` folder.
+3. Trust the author and enable plugins, then follow the setup wizards. Astro Modular Settings configures your site, and Vault CMS connects it to GitHub and your host.
+4. Start writing.
 
 ## Frontmatter Properties
 

@@ -7,20 +7,26 @@ sidebar:
 
 Vault CMS installs into your Astro **content** directory by default (usually `src/content`); installing at the **project root** is also supported.
 
+:::caution[Using Astro Modular? Skip this page.]
+[Astro Modular](/themes/astro-modular/) already includes Vault CMS, preconfigured. Installing Vault CMS on top of it copies a second `.obsidian/` and `_bases/` over the ones the theme ships with. Follow the [Astro Modular getting started steps](/themes/astro-modular/#getting-started) instead.
+:::
+
 :::tip
 Using Claude Code, Cursor, or Claude Desktop? Skip the CLI and let your AI agent handle the install, see the [MCP server guide](/get-started/mcp-server/).
 :::
 
 ## Prerequisites
 
-- **[Node.js](https://nodejs.org/)**: **20 or later**; **22.x** is a good default for current Astro tooling. Required to run `create-vaultcms`.
 - **[Astro](https://astro.build/)** project (see [themes](https://astro.build/themes))
 - **[Obsidian](https://obsidian.md)** (desktop)
 - **[Git](https://git-scm.com/)**: for publishing from Obsidian and normal project version control
+- **[Node.js](https://nodejs.org/)** (optional): **20 or later**. Needed only for the CLI installation. [Manual installation](#manual-installation) gives the same result without Node.
 
-## CLI installation (recommended)
+Vault CMS itself doesn't need Node.js. Your host (Netlify, Vercel, Cloudflare) builds the site when you publish, so Node on your own computer is only for previewing the site locally or running the CLI.
 
-From your Astro project root (the folder that contains `astro.config.mjs`):
+## CLI installation
+
+The fastest option if you already have Node.js. From your Astro project root (the folder that contains `astro.config.mjs`):
 
 ```bash
 npx create-vaultcms
@@ -51,7 +57,7 @@ Other package managers and template names work the same way. See [Presets](/get-
 
 ## Manual installation
 
-Use manual install if you cannot run Node, want to inspect files first, or are wiring a custom monorepo layout. The CLI is still the recommended path for most users.
+Manual installation copies the same files as the CLI, so the result is identical. Choose it if you don't have Node.js, want to see exactly what goes into your project, or are wiring a custom monorepo layout. The only extra step is updating `.gitignore` yourself (step 6).
 
 1. **Download** the [Vault CMS ZIP](https://github.com/davidvkimball/vaultcms/archive/refs/heads/master.zip) or clone `https://github.com/davidvkimball/vaultcms.git`.
 2. **Choose the target** inside your Astro project, usually `src/content` or the repo root (same tradeoffs as the CLI).
